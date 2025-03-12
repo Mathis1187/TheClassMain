@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g9IxXNwe9cs=",
+  "success": true,
+  "projectFilePath": "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
