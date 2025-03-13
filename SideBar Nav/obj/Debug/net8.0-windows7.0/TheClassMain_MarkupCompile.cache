@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\TheClassMain\Projet\obj\Debug\net8.0-windows7.0\
+D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\
 TheClassMain
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\TheClassMain\Projet\App.xaml
-7522886800
+D:\TheClassMain\SideBar Nav\App.xaml
+9-796884451
 
-91642822618
+11-440373705
 198-352714763
-MainWindow.xaml;Pages\Page1.xaml;Pages\Page2.xaml;Pages\Page3.xaml;Pages\Page4.xaml;Pages\Page5.xaml;Themes\Generic.xaml;
+MainWindow.xaml;Pages\Calendrier.xaml;Pages\Compte.xaml;Pages\Factures.xaml;Pages\Favorit.xaml;Pages\Home.xaml;Pages\Rappels.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
 
-True
+False
 

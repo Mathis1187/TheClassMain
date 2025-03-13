@@ -1,10 +1,12 @@
-﻿D:\TheClassMain\Projet\obj\Debug\net8.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+﻿
 
-FD:\TheClassMain\Projet\MainWindow.xaml;;
-FD:\TheClassMain\Projet\Pages\Page1.xaml;;
-FD:\TheClassMain\Projet\Pages\Page2.xaml;;
-FD:\TheClassMain\Projet\Pages\Page3.xaml;;
-FD:\TheClassMain\Projet\Pages\Page4.xaml;;
-FD:\TheClassMain\Projet\Pages\Page5.xaml;;
-FD:\TheClassMain\Projet\Themes\Generic.xaml;;
+FD:\TheClassMain\SideBar Nav\MainWindow.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Calendrier.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Compte.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Factures.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Favorit.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Home.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Rappels.xaml;;
+FD:\TheClassMain\SideBar Nav\Pages\Settings.xaml;;
+FD:\TheClassMain\SideBar Nav\Themes\Generic.xaml;;
 
