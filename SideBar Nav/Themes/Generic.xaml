@@ -10,7 +10,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:NavButton}">
                     <Border x:Name="back"
-                            CornerRadius="8"
+                            CornerRadius="10"
                             Padding="{TemplateBinding Padding}"
                             Background="Transparent"
                             BorderBrush="{TemplateBinding BorderBrush}"

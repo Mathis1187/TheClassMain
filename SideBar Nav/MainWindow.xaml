@@ -15,7 +15,7 @@
         <Image x:Name="Logo" Margin="44,10,0,0" VerticalAlignment="Top" Height="40" Source="/img/logo.png" HorizontalAlignment="Left"/>
 
         <ListBox Grid.Column="0" SelectionMode="Single" SelectionChanged="sidebar_SelectionChanged" x:Name="sidebar" Margin="0,50,0,0" BorderThickness="0">
-            <local:NavButton Navlink="/Pages/Home.xaml" Label="Home" Margin="3,10" Padding="6" Icon="M10 20V14H14V20H19V12H22L12 3 2 12H5V20H10Z" HorizontalAlignment="Left"/>
+            <local:NavButton Navlink="/Pages/Home.xaml" Label="Home" Margin="3" Padding="6" Icon="M10 20V14H14V20H19V12H22L12 3 2 12H5V20H10Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Calendrier.xaml" Label="Calendrier" Margin="3,10" Padding="6" Icon="M7 10H9V12H7V10ZM11 10H13V12H11V10ZM15 10H17V12H15V10ZM19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.89 3 6V20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.89 20.1 4 19 4ZM19 20H5V9H19V20Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Factures.xaml" Label="Factures" Margin="3,10" Padding="6" Icon="M4 22H20V2H4V22ZM13 18H11V16H13V18ZM13 14H11V8H13V14Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Rappels.xaml" Label="Rappels" Margin="3,10" Padding="6" Icon="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" HorizontalAlignment="Left"/>
