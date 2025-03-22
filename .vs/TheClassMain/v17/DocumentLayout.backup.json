@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\TheClassMain\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\factures.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\factures.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -35,37 +27,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Factures.xaml",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Factures.xaml",
-              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Factures.xaml",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Factures.xaml",
-              "RelativeToolTip": "SideBar Nav\\Pages\\Factures.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-17T22:27:35.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Generic.xaml",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Themes\\Generic.xaml",
-              "RelativeDocumentMoniker": "SideBar Nav\\Themes\\Generic.xaml",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Themes\\Generic.xaml",
-              "RelativeToolTip": "SideBar Nav\\Themes\\Generic.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-19T18:40:48.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml",
               "ToolTip": "D:\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
               "RelativeToolTip": "SideBar Nav\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T17:23:59.365Z",
+              "WhenOpened": "2025-03-22T17:53:39.021Z",
               "EditorCaption": ""
             }
           ]

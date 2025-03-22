@@ -7,25 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\Facture.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Calendrier.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Factures.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Pages\Compte.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Rappels.xaml.cs">
+    <Compile Update="Pages\Categorie.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Favorit.xaml.cs">
+    <Compile Update="Pages\Historique.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Settings.xaml.cs">
@@ -33,22 +33,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\Facture.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\Home.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Calendrier.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\Factures.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Pages\Compte.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\Rappels.xaml">
+    <Page Update="Pages\Categorie.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\Favorit.xaml">
+    <Page Update="Pages\Historique.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Settings.xaml">
