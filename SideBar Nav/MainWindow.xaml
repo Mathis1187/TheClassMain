@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TheClassMain"
         mc:Ignorable="d"
-        Title="MainWindow" SnapsToDevicePixels="True" Height="457" Width="800">
+        Title="MainWindow" SnapsToDevicePixels="True" Height="460" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="125"/>

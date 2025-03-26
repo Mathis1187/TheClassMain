@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TheClassMain.Composants;
 
 namespace TheClassMain.Pages
 {
@@ -20,9 +21,17 @@ namespace TheClassMain.Pages
     /// </summary>
     public partial class Facture : Page
     {
+
         public Facture()
         {
             InitializeComponent();
+            Factures factures = new Factures();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         private void MyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -32,11 +41,6 @@ namespace TheClassMain.Pages
             {
                 MessageBox.Show($"Sélectionné : {selectedItem}");
             }
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
         }
     }
 }
