@@ -11,20 +11,22 @@ namespace TheClassMain.Composants
 {
     class Factures
     {
-        private string name;
-        private string description;
-        private int montant;
-        private Calendar date;
-        private RappelsCategories rappels;
-        private List<Factures> factures;
+        static int cpt = 1;
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Montant { get; set; }
+        public DateTime Date { get; set; }
+        public string Categorie { get; set; }
+        public int Num {  get; set; }
 
         public Factures()
         {
+            Num = cpt++;
         }
 
-        public String Name { get; set; }
-        public String Description { get; set; }
-        public int Montant { get; set; }
-        public Calendar Date { get; set; }
+           public override string ToString()
+       {
+           return $"#{Num} - {Description} | {Montant}$ | {Categorie} | {Date.ToShortDateString()}";
+       }
     }
 }

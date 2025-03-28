@@ -22,7 +22,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Border CornerRadius="10" BorderBrush="Black" Background="Gray">
+                <Border CornerRadius="10" BorderBrush="Black" Background="LightGray">
                     <TextBox x:Name="NameFactureInput" BorderBrush="Transparent" Background="Transparent" VerticalAlignment="Center" Height="30" HorizontalAlignment="Stretch" />
                 </Border>
                 <TextBlock x:Name="Placeholder" Text="num/name" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" IsHitTestVisible="False"/>
@@ -39,33 +39,28 @@
                     <ColumnDefinition Width="400" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="1" Width="400" CornerRadius="10" Background="White">
-                    <ListBox Width="400" Background="Transparent" BorderBrush="Transparent">
-                        <ListBoxItem>Test</ListBoxItem>
-                        <ListBoxItem>Test</ListBoxItem>
-                        <ListBoxItem>Test</ListBoxItem>
-                        <ListBoxItem>Test</ListBoxItem>
-                    </ListBox>
+                <Border Grid.Column="1" Width="200" CornerRadius="10" Background="Green">
+                    <ListBox x:Name="FacturesListBox" Width="200" Background="Transparent" BorderBrush="Transparent"/>
                 </Border>
             </Grid>
         </StackPanel>
 
-        <Border Grid.Row="3" CornerRadius="20" Background="Gray" Width="550">
+        <Border Grid.Row="3" CornerRadius="20" Background="LightGray" Width="470">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
                     <TextBlock Text="Description: " VerticalAlignment="Center"/>
                     <Border CornerRadius="10" BorderBrush="Black" Background="White" Width="250" Height="30">
-                        <TextBox Text="" Background="Transparent" BorderBrush="Transparent" VerticalContentAlignment="Center" Margin="5"/>
+                        <TextBox x:Name="DescriptionTextBox" Background="Transparent" BorderBrush="Transparent" VerticalContentAlignment="Center" Margin="5"/>
                     </Border>
                     <Border CornerRadius="10" Background="Black" Width="70" Height="30" Margin="5">
                         <Button BorderBrush="Transparent" Content="Ajouter" Background="Transparent" Foreground="White" Click="Button_Click"/>
                     </Border>
                 </StackPanel>
 
-                <Border CornerRadius="20" Background="Gray" Margin="10,10,10,0">
+                <Border CornerRadius="20" Background="LightGray" Margin="10,10,10,0">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <TextBlock Text="Montant: " VerticalAlignment="Center"/>
-                        <TextBox Width="Auto" MinWidth="30" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="Black" Background="Transparent" BorderBrush="Black" TextAlignment="Center" Margin="5"/>
+                        <TextBox x:Name="MontantTextBox" Width="Auto" MinWidth="30" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="Black" Background="Transparent" BorderBrush="Black" TextAlignment="Center" Margin="5"/>
 
                         <TextBlock Text=" - Categorie " VerticalAlignment="Center"/>
                         <ComboBox x:Name="MyComboBox" SelectionChanged="MyComboBox_SelectionChanged" Width="80" Height="25" Margin="5" >
@@ -75,10 +70,9 @@
                         </ComboBox>
 
                         <TextBlock Text=" - Date " VerticalAlignment="Center"/>
-                        <DatePicker Width="102" Margin="5"/>
+                        <DatePicker Name="DateFacturePicker" Width="102" Margin="5"/>
 
-                        <TextBlock Text=" - Num" VerticalAlignment="Center"/>
-                        <TextBox VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="Auto" MinWidth="30" Height="20" Margin="5" Foreground="Black" Background="Transparent" BorderBrush="Black" TextAlignment="Center" IsReadOnly="True"/>
+
                     </StackPanel>
                 </Border>
             </StackPanel>
