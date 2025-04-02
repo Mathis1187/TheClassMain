@@ -51,14 +51,5 @@ namespace TheClassMain.Pages
             };
             facturesList.Add(newFacture);
         }
-
-        private void MyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var selectedItem = (sender as ComboBox)?.SelectedItem;
-            if (selectedItem != null)
-            {
-                MessageBox.Show($"Sélectionné : {selectedItem}");
-            }
-        }
     }
 }

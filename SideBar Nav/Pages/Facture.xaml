@@ -17,7 +17,12 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Grid Width="150" Height="30">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -32,20 +37,27 @@
             </Border>
         </StackPanel>
 
-        <StackPanel Grid.Row="1">
+        <StackPanel Grid.Row="1" Grid.Column="0">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="400" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Border Grid.Column="1" Width="200" CornerRadius="10" Background="Green">
-                    <ListBox x:Name="FacturesListBox" Width="200" Background="Transparent" BorderBrush="Transparent"/>
-                </Border>
+                <ListBox Grid.Column="0" x:Name="FacturesListBox" Width="Auto" Height="Auto" Background="Gray" BorderBrush="Black"/>
             </Grid>
         </StackPanel>
 
-        <Border Grid.Row="3" CornerRadius="20" Background="LightGray" Width="470">
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="Green">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </StackPanel>
+
+        <Border Grid.Row="3" Grid.ColumnSpan="2" CornerRadius="20" Background="LightGray" Width="470">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
                     <TextBlock Text="Description: " VerticalAlignment="Center"/>
@@ -63,7 +75,7 @@
                         <TextBox x:Name="MontantTextBox" Width="Auto" MinWidth="30" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="Black" Background="Transparent" BorderBrush="Black" TextAlignment="Center" Margin="5"/>
 
                         <TextBlock Text=" - Categorie " VerticalAlignment="Center"/>
-                        <ComboBox x:Name="MyComboBox" SelectionChanged="MyComboBox_SelectionChanged" Width="80" Height="25" Margin="5" >
+                        <ComboBox x:Name="MyComboBox" Width="80" Height="25" Margin="5" >
                             <ComboBoxItem Content="Option 1"/>
                             <ComboBoxItem Content="Option 2"/>
                             <ComboBoxItem Content="Option 3"/>
