@@ -43,19 +43,23 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <ListBox Grid.Column="0" x:Name="FacturesListBox" Width="Auto" Height="Auto" Background="Gray" BorderBrush="Black"/>
+                <Border Grid.Column="0" Width="Auto" Height="Auto" Background="Gray" BorderBrush="Black" CornerRadius="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox x:Name="FacturesListBox" Width="Auto" Height="Auto" Background="Transparent" BorderBrush="Transparent" SelectionChanged="FacturesListBox_SelectionChanged"/>
+                </Border>
             </Grid>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" Background="Green">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-            </Grid>
-        </StackPanel>
+        <Border Grid.Row="1" Grid.Column="1" CornerRadius="20" Background="LightGray" Height="250" Width="Auto">
+            <StackPanel Background="Transparent">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </StackPanel>
+        </Border>
 
         <Border Grid.Row="3" Grid.ColumnSpan="2" CornerRadius="20" Background="LightGray" Width="470">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">

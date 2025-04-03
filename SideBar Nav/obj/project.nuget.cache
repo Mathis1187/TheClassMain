@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "94AJ6eXlChQ=",
+  "dgSpecHash": "vu9kgyzoTx0=",
   "success": true,
-  "projectFilePath": "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+  "projectFilePath": "E:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2355173\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512"
   ],

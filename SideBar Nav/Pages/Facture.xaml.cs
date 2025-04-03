@@ -51,5 +51,10 @@ namespace TheClassMain.Pages
             };
             facturesList.Add(newFacture);
         }
+
+        private void FacturesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show(FacturesListBox.SelectedItem.ToString(), "facturesList", MessageBoxButton.OK);
+        }
     }
 }
