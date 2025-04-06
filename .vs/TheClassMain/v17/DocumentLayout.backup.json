@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TheClassMain\\",
+  "WorkspaceRootPath": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\pages\\historique.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\historique.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\composants\\factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\composants\\factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\homepage\\theclassmain\\sidebar nav\\composants\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\composants\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,13 +55,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml*",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Home.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T23:04:25.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
               "RelativeToolTip": "SideBar Nav\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-22T17:53:39.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Home.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:16:53.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Historique.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Historique.xaml.cs",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Historique.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:16:56.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Facture.xaml",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T23:04:18.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Calendrier.xaml",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Calendrier.xaml",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Calendrier.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T23:04:14.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Factures.cs",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Composants\\Factures.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Composants\\Factures.cs",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Composants\\Factures.cs",
+              "RelativeToolTip": "SideBar Nav\\Composants\\Factures.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:03:49.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Categorie.cs",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Composants\\Categorie.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Composants\\Categorie.cs",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\HomePage\\TheClassMain\\SideBar Nav\\Composants\\Categorie.cs",
+              "RelativeToolTip": "SideBar Nav\\Composants\\Categorie.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T23:03:34.693Z",
               "EditorCaption": ""
             }
           ]

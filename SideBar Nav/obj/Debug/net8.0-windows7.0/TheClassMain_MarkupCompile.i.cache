@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\
+C:\Users\papem\Desktop\WPF\HomePage\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\
 TheClassMain
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\TheClassMain\SideBar Nav\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\papem\Desktop\WPF\HomePage\TheClassMain\SideBar Nav\App.xaml
 9-703764124
 
 15-494830547
-198-352714763
+198-344842731
 MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
 
-True
+False
 
