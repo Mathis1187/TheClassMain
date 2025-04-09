@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {}
+    "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {}
   },
   "projects": {
-    "E:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {
+    "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+        "projectUniqueName": "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
         "projectName": "TheClassMain",
-        "projectPath": "E:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+        "projectPath": "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
         "packagesPath": "C:\\Users\\2355173\\.nuget\\packages\\",
-        "outputPath": "E:\\TheClassMain\\SideBar Nav\\obj\\",
+        "outputPath": "D:\\TheClassMain\\SideBar Nav\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,18 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.NETCore.Platforms": {
               "target": "Package",
               "version": "[7.0.4, )"

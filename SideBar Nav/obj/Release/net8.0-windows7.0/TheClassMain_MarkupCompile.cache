@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 E:\TheClassMain\SideBar Nav\App.xaml
-9-703764124
+10-731586129
 
-13-891663898
-198-1431420039
-MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
+15-934290093
+221-806300103
+MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\FactureDetails.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
 
 True
 
