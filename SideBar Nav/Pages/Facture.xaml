@@ -7,75 +7,63 @@
      mc:Ignorable="d"
      d:DesignHeight="450" d:DesignWidth="800"
      Title="Factures" Background="#e9ecef">
-    
-    <Grid x:Name="Form">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Grid Width="150" Height="30">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Border CornerRadius="10" BorderBrush="Black" Background="LightGray">
-                    <TextBox x:Name="NameFactureInput" BorderBrush="Transparent" Background="Transparent" VerticalAlignment="Center" Height="30" HorizontalAlignment="Stretch"/>
-                </Border>
-                <TextBlock x:Name="Placeholder" Text="num/name" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" IsHitTestVisible="False"/>
-            </Grid>
-            <Border CornerRadius="10" Background="Black" Width="70" Height="30" Margin="5">
-                <Button BorderBrush="Transparent" Content="Search" Background="Transparent" Foreground="White"/>
-            </Border>
-        </StackPanel>
-        
-        <StackPanel Grid.Row="1">
-            <Border Width="Auto" Height="Auto" Background="Gray" BorderBrush="Black" CornerRadius="10" HorizontalAlignment="Left">
-                <ListBox x:Name="FacturesListBox" Width="Auto" Height="Auto" Background="Transparent" BorderBrush="Transparent" SelectionChanged="FacturesListBox_SelectionChanged">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black" Padding="10" Background="White" Margin="5">
-                                <StackPanel>
-                                    <TextBlock Text="{Binding Num}" FontWeight="Bold" FontSize="14"/>
-                                    <TextBlock Text="{Binding Description}" FontWeight="Bold" FontSize="14"/>
-                                    <TextBlock Text="{Binding Montant}" Foreground="Green"/>
-                                    <TextBlock Text="{Binding Date, StringFormat=d}" FontStyle="Italic"/>
-                                </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </Border>
-        </StackPanel>
+    <Grid>
+        <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
+            <StackPanel>
 
-        <Border Grid.Row="3" Grid.ColumnSpan="2" CornerRadius="20" Background="LightGray" Width="470">
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
-                    <TextBlock Text="Description: " VerticalAlignment="Center"/>
-                    <Border CornerRadius="10" BorderBrush="Black" Background="White" Width="250" Height="30">
-                        <TextBox x:Name="DescriptionTextBox" Background="Transparent" BorderBrush="Transparent" VerticalContentAlignment="Center" Margin="5"/>
-                    </Border>
-                    <Border CornerRadius="10" Background="Black" Width="70" Height="30" Margin="5">
-                        <Button BorderBrush="Transparent" Content="Ajouter" Background="Transparent" Foreground="White" Click="Button_Click"/>
-                    </Border>
+                <TextBlock Text="Liste des factures" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListView x:Name="FacturesListView" ItemsSource="{Binding FacturesList}" Height="150" SelectionChanged="FacturesListBox_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding Num}" />
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant}" />
+                            <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding Categorie}" />
+                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <Separator Margin="0,15,0,15"/>
+
+                <TextBlock Text="Nouvelle facture" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" VerticalAlignment="Center">
+                    <TextBlock Text="Description:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="DescriptionTextBox" Width="300" Padding="5"/>
+                    <Button Content="Ajouter"
+                            Click="Button_Click"
+                            Width="100"
+                            Margin="10,0,0,0"
+                            Padding="5"
+                            Background="Gray"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            VerticalAlignment="Center"/>
                 </StackPanel>
 
-                <Border CornerRadius="20" Background="LightGray" Margin="10,10,10,0">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <TextBlock Text="Montant: " VerticalAlignment="Center"/>
-                        <TextBox x:Name="MontantTextBox" Width="Auto" MinWidth="30" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="Black" Background="Transparent" BorderBrush="Black" TextAlignment="Center" Margin="5"/>
-                        <TextBlock Text=" - Categorie " VerticalAlignment="Center"/>
-                        <ComboBox x:Name="MyComboBox" Width="80" Height="25" Margin="5">
-                            <ComboBoxItem Content="Option 1"/>
-                            <ComboBoxItem Content="Option 2"/>
-                            <ComboBoxItem Content="Option 3"/>
-                        </ComboBox>
-                        <TextBlock Text=" - Date " VerticalAlignment="Center"/>
-                        <DatePicker Name="DateFacturePicker" Width="102" Margin="5"/>
-                    </StackPanel>
-                </Border>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Montant:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="MontantTextBox" Width="300" Padding="5"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Catégorie:" Width="100" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="MyComboBox" Width="300" Padding="5">
+                        <ComboBoxItem Content="Sélectionnez une catégorie" IsSelected="True" IsEnabled="False"/>
+                        <ComboBoxItem Content="Option 1"/>
+                        <ComboBoxItem Content="Option 2"/>
+                        <ComboBoxItem Content="Option 3"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Date:" Width="100" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="DateFacturePicker" Width="300"/>
+                </StackPanel>
             </StackPanel>
         </Border>
     </Grid>
