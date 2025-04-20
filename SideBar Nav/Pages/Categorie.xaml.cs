@@ -1,54 +1,47 @@
 using System;
+using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Controls;
+using TheClassMain.Composants;
 
 namespace TheClassMain.Pages
 {
     /// <summary>
     /// Interaction logic for Page4.xaml
     /// </summary>
+    /// 
     public partial class Categorie : Page
     {
+        private ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
         public Categorie()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
-        private void btnADDrapelle_click(object sender, System.Windows.RoutedEventArgs e)
+        public ObservableCollection<Categories> CategorieList
         {
-            if (txtAJOUTRAPELLE.Text != "" && dpDateRappel.SelectedDate != null)
-            {
-                lstRAPELLE.Items.Add(txtAJOUTRAPELLE.Text + " - " + dpDateRappel.SelectedDate.Value.ToShortDateString());
-                txtAJOUTRAPELLE.Clear();
-                dpDateRappel.SelectedDate = null;
-                ATTENTION();
-            }
+            get { return categoriesList; }
         }
-        private void ATTENTION()
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DateTime? dateProche = null;
-            string nomProche = "";
-
-            foreach (string item in lstRAPELLE.Items)
+            if (string.IsNullOrWhiteSpace(NameTextBox.Text))
             {
-                string[] DATE = item.Split(" - ");
-                if (DATE.Length == 2 && DateTime.TryParse(DATE[1], out DateTime date))
-                {
-                    if (dateProche == null || date < dateProche)
-                    {
-                        dateProche = date;
-                        nomProche = DATE[0];
-                    }
-                }
+                MessageBox.Show("Veuillez remplir tous les champs correctement.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
             }
 
-            if (dateProche != null)
-                txtPROCHAIN.Text = $"ATTENTION : PROCHAIN PAIEMENT DE {nomProche} LE {dateProche.Value.ToShortDateString()}";
-            else
-                txtPROCHAIN.Text = "ATTENTION : PROCHAIN PAIEMENT - AUCUN";
+            Categories newCategorie = new Categories
+            {
+                Name = NameTextBox.Text,
+                Favorit = (bool)FavoritCheckBox.IsChecked
+            };
 
+            categoriesList.Add(newCategorie);
 
-
-
+            NameTextBox.Clear();
         }
+
     }
 }
+

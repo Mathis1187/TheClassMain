@@ -8,23 +8,47 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Categorie">
 
-    <Grid Background="#f1f3f5">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="119*"/>
-            <RowDefinition Height="31*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="441*"/>
-            <ColumnDefinition Width="359*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="Categorie" FontFamily="ubuntu" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold" Margin="10,10,0,0" Height="72" Width="297"/>
+    <Grid>
+        <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
+            <StackPanel>
 
-        <Button Content="ajouter un rapelle" HorizontalAlignment="Center" Margin="0,263,0,0" VerticalAlignment="Top" Height="62" Width="224" FontSize="18" FontWeight="Bold" FontStyle="Italic" x:Name="BTNADD" Click="btnADDrapelle_click" RenderTransformOrigin="0.456,0.205" Grid.Column="1"/>
-        <ListBox  Margin="10,141,28,110" x:Name="lstRAPELLE" BorderBrush="Red" Background="{x:Null}"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="224" Height="32" x:Name="txtAJOUTRAPELLE" Grid.Column="1"/>
-        <DatePicker HorizontalAlignment="Center" Margin="0,198,0,0"
-                VerticalAlignment="Top" Width="224" Height="36"
-                x:Name="dpDateRappel" Grid.Column="1"/>
-        <TextBlock x:Name="txtPROCHAIN" Text="ATTENTION : PROCHAIN PAIEMENT - AUCUN"  Foreground="Red" FontSize="22" FontWeight="Bold" Margin="0,3,0,0" Grid.ColumnSpan="2" Grid.Row="1" />
+                <TextBlock Text="Liste des categories" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategorieList}" Height="150">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding Id}" />
+                            <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" />
+                            <GridViewColumn Header="Favorit" DisplayMemberBinding="{Binding Favorit}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <Separator Margin="0,15,0,15"/>
+
+                <TextBlock Text="Nouvelle categorie" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" VerticalAlignment="Center">
+                    <TextBlock Text="Nom:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="NameTextBox" Width="300" Padding="5"/>
+                    <Button Content="Ajouter"
+                        Click="Button_Click"
+                        Width="100"
+                        Margin="10,0,0,0"
+                        Padding="5"
+                        Background="Gray"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        FontWeight="Bold"
+                        Cursor="Hand"
+                        VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Favorit:" Width="100" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FavoritCheckBox" Width="300" Padding="5"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
     </Grid>
+
 </Page>

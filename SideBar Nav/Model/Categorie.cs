@@ -6,24 +6,17 @@ using System.Threading.Tasks;
 
 namespace TheClassMain.Composants
 {
-    class RappelsCategories
+    public class Categories
     {
-        private List<string> categorie = new List<string>();
-        private bool favorit;
-        private double id;
-
-        public static double autoIncrement = 1;
-
-        public RappelsCategories(List<string> categorie, bool favorit, double id)
-        {
-            this.categorie = categorie;
-            this.favorit = favorit;
-            this.id = autoIncrement++;
-        }
-
-        public List<String> Categorie { get; set; }
+        public string Name { get; set; }
         public bool Favorit { get; set; }
-        public double Id { get; set; }
+        public int Id { get; set; }
 
+        static int cpt = 1;
+
+        public Categories()
+        {
+            Id = cpt++;
+        }
     }
 }
