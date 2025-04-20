@@ -8,12 +8,12 @@ D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\
 TheClassMain
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\TheClassMain\SideBar Nav\App.xaml
 10-731586129
 
 17-1187204095
-217-576101646
+2171078580221
 MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\FactureDetails.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
 
 True

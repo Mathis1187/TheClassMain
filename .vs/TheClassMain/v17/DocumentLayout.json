@@ -38,17 +38,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Factures.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\Model\\Factures.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
-              "RelativeToolTip": "SideBar Nav\\Model\\Factures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T02:25:21.177Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Bookmark",
@@ -60,6 +51,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Factures.cs",
+              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Model\\Factures.cs",
+              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
+              "RelativeToolTip": "SideBar Nav\\Model\\Factures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T02:25:21.177Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Facture.xaml.cs",
               "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml.cs",
@@ -68,8 +71,7 @@
               "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwCUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T14:57:39.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T14:57:39.246Z"
             }
           ]
         }

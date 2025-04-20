@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\TheClassMain\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SideBar Nav\\Pages\\Facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\model\\factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\model\\factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SideBar Nav\\Model\\Factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\facture.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SideBar Nav\\Pages\\Facture.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,23 +32,15 @@
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
               "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
               "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-09T17:57:05.663Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Factures.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\Model\\Factures.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
-              "RelativeToolTip": "SideBar Nav\\Model\\Factures.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T02:25:21.177Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Bookmark",
@@ -60,6 +52,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Factures.cs",
+              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Model\\Factures.cs",
+              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Model\\Factures.cs",
+              "RelativeToolTip": "SideBar Nav\\Model\\Factures.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T02:25:21.177Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Facture.xaml.cs",
               "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml.cs",
@@ -68,8 +72,7 @@
               "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwCUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T14:57:39.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T14:57:39.246Z"
             }
           ]
         }
