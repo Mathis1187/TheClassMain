@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SideBar Nav",
-    "\\SideBar Nav\\Context",
     "\\SideBar Nav\\Model",
-    "\\SideBar Nav\\Pages"
+    "\\SideBar Nav\\Pages",
+    "\\SideBar Nav\\Query"
   ],
   "SelectedNode": "\\TheClassMain.sln",
   "PreviewInSolutionExplorer": false

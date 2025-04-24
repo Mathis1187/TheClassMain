@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using TheClassMain.Composants;
+using TheClassMain.Query;
 
 namespace TheClassMain
 {
@@ -13,6 +13,11 @@ namespace TheClassMain
         public MainWindow()
         {
             InitializeComponent();
+
+            using (var context = new TableContext())
+            {
+                context.CreateDatabase();
+            }
         }
 
         private void sidebar_SelectionChanged(object sender, SelectionChangedEventArgs e)

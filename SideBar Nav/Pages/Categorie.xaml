@@ -6,7 +6,8 @@
       xmlns:local="clr-namespace:TheClassMain.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Categorie">
+      Title="Categorie"
+      Loaded="Page_Loaded">
 
     <Grid>
         <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
@@ -18,7 +19,13 @@
                         <GridView>
                             <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding Id}" />
                             <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" />
-                            <GridViewColumn Header="Favorit" DisplayMemberBinding="{Binding Favorit}" />
+                            <GridViewColumn Header="Favorit">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding Favorit, Mode=TwoWay}" HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
                         </GridView>
                     </ListView.View>
                 </ListView>
@@ -31,21 +38,16 @@
                     <TextBlock Text="Nom:" Width="100" VerticalAlignment="Center"/>
                     <TextBox x:Name="NameTextBox" Width="300" Padding="5"/>
                     <Button Content="Ajouter"
-                        Click="Button_Click"
-                        Width="100"
-                        Margin="10,0,0,0"
-                        Padding="5"
-                        Background="Gray"
-                        Foreground="White"
-                        BorderBrush="Transparent"
-                        FontWeight="Bold"
-                        Cursor="Hand"
-                        VerticalAlignment="Center"/>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                    <TextBlock Text="Favorit:" Width="100" VerticalAlignment="Center"/>
-                    <CheckBox x:Name="FavoritCheckBox" Width="300" Padding="5"/>
+                            Click="Button_Click"
+                            Width="100"
+                            Margin="10,0,0,0"
+                            Padding="5"
+                            Background="Gray"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            VerticalAlignment="Center"/>
                 </StackPanel>
             </StackPanel>
         </Border>

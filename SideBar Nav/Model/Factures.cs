@@ -1,33 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using TheClassMain.Pages;
-using Microsoft.VisualBasic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TheClassMain.Composants
 {
     public class Factures
     {
-        static int cpt = 1;
+
+        [Key]
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Montant { get; set; }
         public DateTime Date { get; set; }
-        public string Categorie { get; set; }
-        public int Num {  get; set; }
 
-        public Factures()
-        {
-            Num = cpt++;
-        }
+        [ForeignKey("CategorieId")]
+        public int CategorieId { get; set; }
 
-           public override string ToString()
-       {
-           return $"#{Num} - {Description} | {Montant}$ | {Categorie} | {Date.ToShortDateString()}";
-       }
+        public string CategorieName { get; set; }
+        public virtual Categories Categorie { get; set; }
     }
 }
