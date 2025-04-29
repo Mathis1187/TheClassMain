@@ -9,6 +9,6 @@
       Title="Calendrier">
 
     <Grid Background="#f1f3f5">
-        <TextBlock Text="Calendrier" FontFamily="ubuntu"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold"/>
+        <TextBlock Text="Calendrier 26xx" FontFamily="ubuntu"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g9IxXNwe9cs=",
+  "dgSpecHash": "YIENkNmnUxs=",
   "success": true,
-  "projectFilePath": "D:\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+  "projectFilePath": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512"
+    "C:\\Users\\yanis\\.nuget\\packages\\microsoft.netcore.platforms\\7.0.4\\microsoft.netcore.platforms.7.0.4.nupkg.sha512"
   ],
   "logs": []
 }
