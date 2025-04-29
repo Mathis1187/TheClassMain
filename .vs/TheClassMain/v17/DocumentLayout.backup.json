@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\yanis\\Desktop\\TheClassMain\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\theclassmain\\sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\theclassmain\\sidebar nav\\pages\\calendrier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\calendrier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\theclassmain\\sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calendrier.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T20:02:43.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Calendrier.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Calendrier.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml*",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Calendrier.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-29T19:52:31.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml",
