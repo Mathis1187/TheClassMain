@@ -13,14 +13,14 @@
         <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" Height="800" BorderBrush="#dcdde1" BorderThickness="1">
             <StackPanel>
                 <TextBlock Text="Liste des factures" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
-                <ListView x:Name="FacturesListView" ItemsSource="{Binding FacturesList}" Height="150" SelectionChanged="FacturesListBox_SelectionChanged">
+                <ListView x:Name="FacturesListView" ItemsSource="{Binding FacturesList}" Height="150">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding Id}" />
-                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
-                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant}" />
-                            <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding CategorieName}" />
-                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat=d}" />
+                            <GridViewColumn Width="Auto" Header="Numéro" DisplayMemberBinding="{Binding Id}" />
+                            <GridViewColumn Width="Auto" Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Width="Auto" Header="Montant" DisplayMemberBinding="{Binding Montant}" />
+                            <GridViewColumn Width="Auto" Header="Categorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Width="Auto" Header="Date" DisplayMemberBinding="{Binding Date, StringFormat=d}" />
                         </GridView>
                     </ListView.View>
                 </ListView>

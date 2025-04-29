@@ -37,7 +37,7 @@ namespace TheClassMain.Pages
             Categories newCategorie = new Categories
             {
                 Name = NameTextBox.Text,
-                Favorit = (bool)FavoritCheckBox.IsChecked
+                IsActive = (bool)ActiveCheckBox.IsChecked
             };
 
             using (var context = new TableContext())
@@ -47,8 +47,7 @@ namespace TheClassMain.Pages
             }
 
             NameTextBox.Clear();
-            FavoritCheckBox.IsChecked = false;
-
+            ActiveCheckBox.IsChecked = false;
             await LoadCategories();
         }
 

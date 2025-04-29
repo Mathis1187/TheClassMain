@@ -12,7 +12,7 @@ namespace TheClassMain.Composants
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool Favorit { get; set; }
+        public bool IsActive { get; set; }
 
 
         public virtual ICollection<Factures> Factures { get; set; }

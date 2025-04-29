@@ -10,9 +10,6 @@
     <Compile Update="Pages\Facture.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\FactureDetails.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Pages\Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,9 +34,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\Facture.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Pages\FactureDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Home.xaml">
