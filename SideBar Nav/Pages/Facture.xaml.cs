@@ -84,12 +84,5 @@ namespace TheClassMain.Pages
             DateFacturePicker.SelectedDate = null;
             await LoadFactures();
         }
-        private void FacturesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (FacturesListView.SelectedItem is Factures selectedFacture)
-            {
-                NavigationService.Navigate(new FactureDetails(selectedFacture));
-            }
-        }
     }
 }

@@ -104,8 +104,6 @@ E:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\refint\TheClassMain.dll
 E:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClassMain.pdb
 E:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClassMain.genruntimeconfig.cache
 E:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\ref\TheClassMain.dll
-D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\FactureDetails.g.cs
-D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\FactureDetails.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClassMain.csproj.AssemblyReference.cache
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClass.8160DD16.Up2Date
 E:\TheClassMain\SideBar Nav\bin\Debug\net8.0-windows7.0\EntityFramework.SqlServer.dll
