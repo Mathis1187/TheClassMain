@@ -147,6 +147,30 @@
           }
         }
       },
+      "Material.Icons/2.4.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Material.Icons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Material.Icons.dll": {}
+        }
+      },
+      "Material.Icons.WPF/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Material.Icons": "2.4.1"
+        },
+        "compile": {
+          "lib/net8.0-windows7.0/Material.Icons.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/Material.Icons.WPF.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1533,6 +1557,37 @@
         "lib/netstandard2.0/K4os.Hash.xxHash.xml",
         "lib/netstandard2.1/K4os.Hash.xxHash.dll",
         "lib/netstandard2.1/K4os.Hash.xxHash.xml"
+      ]
+    },
+    "Material.Icons/2.4.1": {
+      "sha512": "5/8ekF4GXqpluBF+kPfv3TytBpV5Z+h4CUU5iNCDC7+A9hPQvtn08ZUjMUXtcRGxGyfScHYDqzshzTvYiPTCdA==",
+      "type": "package",
+      "path": "material.icons/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Material.Icons.dll",
+        "material.icons.2.4.1.nupkg.sha512",
+        "material.icons.nuspec"
+      ]
+    },
+    "Material.Icons.WPF/2.4.1": {
+      "sha512": "O1+DZVCLvSSHhYritL5t9glKvss0LrEe5RZ2e7O+oTBIQaiVswBmGFoZ+5oOhe+tg0Lp6K1n7f4H7RVS0mXw+Q==",
+      "type": "package",
+      "path": "material.icons.wpf/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Material.Icons.WPF.dll",
+        "lib/net6.0-windows7.0/Material.Icons.WPF.dll",
+        "lib/net7.0-windows7.0/Material.Icons.WPF.dll",
+        "lib/net8.0-windows7.0/Material.Icons.WPF.dll",
+        "lib/net9.0-windows7.0/Material.Icons.WPF.dll",
+        "lib/netcoreapp3.1/Material.Icons.WPF.dll",
+        "material.icons.wpf.2.4.1.nupkg.sha512",
+        "material.icons.wpf.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -3998,6 +4053,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "EntityFramework >= 6.5.1",
+      "Material.Icons.WPF >= 2.4.1",
       "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
       "MySql.Data >= 9.3.0"
@@ -4056,6 +4112,10 @@
           "EntityFramework": {
             "target": "Package",
             "version": "[6.5.1, )"
+          },
+          "Material.Icons.WPF": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

@@ -1,2 +1,8 @@
 *.vsidx
-
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.log
+*.tmp
+*.bak
