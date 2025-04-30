@@ -7,24 +7,12 @@
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\categorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\categorie.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\pages\\categorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\categorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\model\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\model\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,10 +33,6 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Facture.xaml.cs",
@@ -56,72 +40,34 @@
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml.cs",
               "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml.cs",
               "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAcwLwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T13:22:41.384Z",
+              "WhenOpened": "2025-04-30T00:13:16.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Facture.xaml",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
-              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
-              "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T13:22:16.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Categorie.xaml.cs",
               "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Categorie.xaml.cs",
               "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml.cs",
               "RelativeToolTip": "SideBar Nav\\Pages\\Categorie.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA9wCUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAUwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T13:11:07.288Z",
+              "WhenOpened": "2025-04-29T23:59:18.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Categorie.xaml",
               "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Categorie.xaml",
               "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml",
               "RelativeToolTip": "SideBar Nav\\Pages\\Categorie.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-25T13:08:56.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categorie.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Model\\Categorie.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\Model\\Categorie.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Model\\Categorie.cs",
-              "RelativeToolTip": "SideBar Nav\\Model\\Categorie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T13:08:29.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TableContext.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
-              "RelativeToolTip": "SideBar Nav\\Query\\TableContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T13:03:25.889Z",
+              "WhenOpened": "2025-04-29T23:51:34.463Z",
               "EditorCaption": ""
             }
           ]
