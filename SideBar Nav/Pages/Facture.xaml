@@ -1,26 +1,26 @@
 ﻿<Page x:Class="TheClassMain.Pages.Facture"
-     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-     xmlns:local="clr-namespace:TheClassMain.Pages"
-     mc:Ignorable="d"
-     d:DesignHeight="450" d:DesignWidth="800"
-     Title="Factures" Background="#e9ecef">
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:TheClassMain.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="470" d:DesignWidth="800"
+      Title="Factures" Background="#e9ecef"
+      Loaded="Page_Loaded">
 
     <Grid>
-        <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
+        <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" Height="800" BorderBrush="#dcdde1" BorderThickness="1">
             <StackPanel>
-
                 <TextBlock Text="Liste des factures" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
-                <ListView x:Name="FacturesListView" ItemsSource="{Binding FacturesList}" Height="150" SelectionChanged="FacturesListBox_SelectionChanged">
+                <ListView x:Name="FacturesListView" ItemsSource="{Binding FacturesList}" Height="150" SelectionChanged="FacturesListView_SelectionChanged">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding Num}" />
-                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
-                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant}" />
-                            <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding Categorie}" />
-                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" />
+                            <GridViewColumn Width="Auto" Header="Numéro" DisplayMemberBinding="{Binding Id}" />
+                            <GridViewColumn Width="Auto" Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Width="Auto" Header="Montant" DisplayMemberBinding="{Binding Montant}" />
+                            <GridViewColumn Width="Auto" Header="Categorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Width="Auto" Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
                         </GridView>
                     </ListView.View>
                 </ListView>
@@ -37,7 +37,7 @@
                             Width="100"
                             Margin="10,0,0,0"
                             Padding="5"
-                            Background="Gray"
+                            Background="#007bff" 
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
@@ -52,17 +52,35 @@
 
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
                     <TextBlock Text="Catégorie:" Width="100" VerticalAlignment="Center"/>
-                    <ComboBox x:Name="MyComboBox" Width="300" Padding="5">
-                        <ComboBoxItem Content="Sélectionnez une catégorie" IsSelected="True" IsEnabled="False"/>
-                        <ComboBoxItem Content="Option 1"/>
-                        <ComboBoxItem Content="Option 2"/>
-                        <ComboBoxItem Content="Option 3"/>
-                    </ComboBox>
+                    <ComboBox x:Name="MyComboBox" Width="300" Padding="5"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
                     <TextBlock Text="Date:" Width="100" VerticalAlignment="Center"/>
                     <DatePicker x:Name="DateFacturePicker" Width="300"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Left">
+                    <Button Content="Mettre à jour"
+                            Click="UpdateButton_Click"
+                            Width="120"
+                            Margin="0,0,10,0"
+                            Padding="5"
+                            Background="#28a745"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"/>
+
+                    <Button Content="Supprimer"
+                            Click="DeleteButton_Click"
+                            Width="120"
+                            Padding="5"
+                            Background="#dc3545"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"/>
                 </StackPanel>
             </StackPanel>
         </Border>

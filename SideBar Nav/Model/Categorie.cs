@@ -1,29 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheClassMain.Composants
+﻿namespace TheClassMain.Composants
 {
-    class RappelsCategories
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
+    /// <summary>
+    /// Defines the <see cref="Categories" />
+    /// </summary>
+    public class Categories
     {
-        private List<string> categorie = new List<string>();
-        private bool favorit;
-        private double id;
+        /// <summary>
+        /// Gets or sets the Id
+        /// </summary>
+        [Key]
+        public int Id { get; set; }
 
-        public static double autoIncrement = 1;
+        /// <summary>
+        /// Gets or sets the Name
+        /// </summary>
+        public string Name { get; set; }
 
-        public RappelsCategories(List<string> categorie, bool favorit, double id)
-        {
-            this.categorie = categorie;
-            this.favorit = favorit;
-            this.id = autoIncrement++;
-        }
+        /// <summary>
+        /// Gets or sets a value indicating whether IsActive
+        /// </summary>
+        public bool IsActive { get; set; }
 
-        public List<String> Categorie { get; set; }
-        public bool Favorit { get; set; }
-        public double Id { get; set; }
-
+        /// <summary>
+        /// Gets or sets the Factures
+        /// </summary>
+        public virtual ICollection<Factures> Factures { get; set; }
     }
 }

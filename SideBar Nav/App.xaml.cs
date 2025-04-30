@@ -1,7 +1,7 @@
-﻿using System.Windows;
-
-namespace TheClassMain
+﻿namespace TheClassMain
 {
+    using System.Windows;
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>

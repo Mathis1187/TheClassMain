@@ -1,12 +1,15 @@
-﻿using System.Windows.Controls;
-
-namespace TheClassMain.Pages
+﻿namespace TheClassMain.Pages
 {
+    using System.Windows.Controls;
+
     /// <summary>
     /// Logique d'interaction pour Page1.xaml
     /// </summary>
     public partial class Compte : Page
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Compte"/> class.
+        /// </summary>
         public Compte()
         {
             InitializeComponent();

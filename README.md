@@ -11,7 +11,7 @@
 - Organisation du Travail ➡️ [Trello](https://trello.com/b/C8xXXOeA/theclassmain)
 
 
-## 🧑‍💻 Technologies utilisées
+## 🧑‍💻 Technologies utilisées 
 
 
 ## 🔗 Source
