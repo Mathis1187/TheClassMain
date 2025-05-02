@@ -1,8 +1,7 @@
 ﻿namespace TheClassMain.Model
 {
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using TheClassMain.Composants;
 
     /// <summary>
     /// Defines the <see cref="Customer" />
@@ -10,10 +9,10 @@
     public class Customer
     {
         /// <summary>
-        /// Gets or sets the Id
+        /// Gets or sets the CustomerId
         /// </summary>
         [Key]
-        public int Id { get; set; }
+        public int CustomerId { get; set; }
 
         /// <summary>
         /// Gets or sets the UserName
@@ -31,25 +30,13 @@
         public string Pwd { get; set; }
 
         /// <summary>
-        /// Gets or sets the CategorieId
+        /// Gets or sets the Factures
         /// </summary>
-        [ForeignKey("CategorieId")]
-        public int CategorieId { get; set; }
+        public virtual ICollection<Factures> Factures { get; set; }
 
         /// <summary>
-        /// Gets or sets the FactureId
+        /// Gets or sets the Categories
         /// </summary>
-        [ForeignKey("FactureId")]
-        public int FactureId { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Categorie
-        /// </summary>
-        public virtual Categories Categorie { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Facture
-        /// </summary>
-        public virtual Factures Facture { get; set; }
+        public virtual ICollection<Categories> Categories { get; set; }
     }
 }

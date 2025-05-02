@@ -2,7 +2,6 @@
 {
     using System.Windows;
     using System.Windows.Controls;
-    using TheClassMain.Query;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -15,11 +14,6 @@
         public MainWindow()
         {
             InitializeComponent();
-
-            using (var context = new TableContext())
-            {
-                context.CreateDatabase();
-            }
         }
 
         /// <summary>

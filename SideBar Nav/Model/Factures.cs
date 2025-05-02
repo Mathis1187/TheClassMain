@@ -1,4 +1,4 @@
-﻿namespace TheClassMain.Composants
+﻿namespace TheClassMain.Model
 {
     using System;
     using System.ComponentModel.DataAnnotations;
@@ -10,15 +10,10 @@
     public class Factures
     {
         /// <summary>
-        /// Gets or sets the Id
+        /// Gets or sets the FactureId
         /// </summary>
         [Key]
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Name
-        /// </summary>
-        public string Name { get; set; }
+        public int FactureId { get; set; }
 
         /// <summary>
         /// Gets or sets the Description
@@ -36,19 +31,30 @@
         public DateTime Date { get; set; }
 
         /// <summary>
+        /// Gets or sets the CustomerId
+        /// </summary>
+        public int CustomerId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Customer
+        /// </summary>
+        [ForeignKey("CustomerId")]
+        public virtual Customer Customer { get; set; }
+
+        /// <summary>
         /// Gets or sets the CategorieId
         /// </summary>
-        [ForeignKey("CategorieId")]
         public int CategorieId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Categorie
+        /// </summary>
+        [ForeignKey("CategorieId")]
+        public virtual Categories Categorie { get; set; }
 
         /// <summary>
         /// Gets or sets the CategorieName
         /// </summary>
         public string CategorieName { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Categorie
-        /// </summary>
-        public virtual Categories Categorie { get; set; }
     }
 }

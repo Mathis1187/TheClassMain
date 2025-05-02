@@ -3,21 +3,21 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:TheClassMain.Pages"
+      xmlns:local="clr-namespace:TheClassMain.ViewModel"
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Categorie"
-      Loaded="Page_Loaded">
+      DataContext="CategorieViewModel">
 
     <Grid>
         <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
             <StackPanel>
 
                 <TextBlock Text="Liste des categories" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
-                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategorieList}" Height="150" SelectionChanged="CategoriesListView_SelectionChanged">
+                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategorieList}" Height="150" SelectedItem="{Binding SelectedCategorie}">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding Id}" />
+                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding CategorieId}" />
                             <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" />
                             <GridViewColumn Header="Active" DisplayMemberBinding="{Binding IsActive}" />
                         </GridView>
@@ -30,13 +30,13 @@
 
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0" VerticalAlignment="Center">
                     <TextBlock Text="Nom:" Width="100" VerticalAlignment="Center"/>
-                    <TextBox x:Name="NameTextBox" Width="300" Padding="5"/>
+                    <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="300" Padding="5"/>
                     <Button Content="Ajouter"
-                            Click="Button_Click"
+                            Click="AddButton_Click"
                             Width="100"
                             Margin="10,0,0,0"
                             Padding="5"
-                            Background="Gray"
+                            Background="Blue"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
@@ -75,5 +75,4 @@
             </StackPanel>
         </Border>
     </Grid>
-
 </Page>

@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\Compte.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Facture.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,7 +19,7 @@
     <Compile Update="Pages\Calendrier.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Pages\Compte.xaml.cs">
+    <Compile Update="Pages\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Categorie.xaml.cs">
@@ -28,11 +31,17 @@
     <Compile Update="Pages\Historique.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Register.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Settings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\Compte.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\Facture.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -42,7 +51,7 @@
     <Page Update="Pages\Calendrier.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Pages\Compte.xaml">
+    <Page Update="Pages\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Categorie.xaml">

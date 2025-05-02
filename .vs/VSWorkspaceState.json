@@ -4,7 +4,9 @@
     "\\SideBar Nav",
     "\\SideBar Nav\\Model",
     "\\SideBar Nav\\Pages",
-    "\\SideBar Nav\\Query"
+    "\\SideBar Nav\\Query",
+    "\\SideBar Nav\\Themes",
+    "\\SideBar Nav\\ViewModel"
   ],
   "SelectedNode": "\\TheClassMain.sln",
   "PreviewInSolutionExplorer": false
