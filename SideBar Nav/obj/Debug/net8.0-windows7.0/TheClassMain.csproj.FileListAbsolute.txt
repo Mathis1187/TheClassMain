@@ -211,7 +211,6 @@ D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Themes\LoginStyle.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\MainWindow.g.cs
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Calendrier.g.cs
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Categorie.g.cs
-D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Compte.g.cs
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Facture.g.cs
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Historique.g.cs
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Home.g.cs
@@ -226,7 +225,6 @@ D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\App.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\MainWindow.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Calendrier.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Categorie.baml
-D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Compte.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Facture.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Historique.baml
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Home.baml
@@ -246,3 +244,7 @@ D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\refint\TheClassMain.dll
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClassMain.pdb
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\TheClassMain.genruntimeconfig.cache
 D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\ref\TheClassMain.dll
+D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Compte.g.cs
+D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Compte.baml
+D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Notification.g.cs
+D:\TheClassMain\SideBar Nav\obj\Debug\net8.0-windows7.0\Pages\Notification.baml
