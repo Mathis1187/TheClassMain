@@ -8,43 +8,20 @@
     using TheClassMain.Model;
     using TheClassMain.Query;
 
-    /// <summary>
-    /// Logique d'interaction pour Register.xaml
-    /// </summary>
     public partial class Register : Window
     {
-        /// <summary>
-        /// Defines the customersList
-        /// </summary>
         private ObservableCollection<Customer> customersList = new ObservableCollection<Customer>();
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Register"/> class.
-        /// </summary>
         public Register()
         {
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Gets the CustomerList
-        /// </summary>
         public ObservableCollection<Customer> CustomerList => customersList;
-
-        /// <summary>
-        /// The Page_Loaded
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="RoutedEventArgs"/></param>
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             await LoadCustomer();
         }
 
-        /// <summary>
-        /// The LoadCustomer
-        /// </summary>
-        /// <returns>The <see cref="Task"/></returns>
         private async Task LoadCustomer()
         {
             using (var context = new TableContext())
@@ -55,12 +32,6 @@
                     customersList.Add(user);
             }
         }
-
-        /// <summary>
-        /// The Login_Click
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="RoutedEventArgs"/></param>
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             var login = new Login();
@@ -68,12 +39,6 @@
 
             this.Close();
         }
-
-        /// <summary>
-        /// The Login_OnMouseDown
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="MouseButtonEventArgs"/></param>
         private void Login_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -82,12 +47,6 @@
 
             }
         }
-
-        /// <summary>
-        /// The Register_Click
-        /// </summary>
-        /// <param name="sender">The sender<see cref="object"/></param>
-        /// <param name="e">The e<see cref="RoutedEventArgs"/></param>
         private async void Register_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(UserName.Text) || string.IsNullOrEmpty(Email.Text) || string.IsNullOrEmpty(Password.Text))

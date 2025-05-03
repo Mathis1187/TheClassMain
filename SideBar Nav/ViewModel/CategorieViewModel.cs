@@ -12,80 +12,46 @@
     using TheClassMain.Model;
     using TheClassMain.Query;
     using TheClassMain.Service;
-
-    /// <summary>
-    /// Defines the <see cref="CategorieViewModel" />
-    /// </summary>
     public class CategorieViewModel : INotifyPropertyChanged
     {
-        /// <summary>
-        /// Defines the categoriesList
-        /// </summary>
-        public ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
+        private ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
 
-        /// <summary>
-        /// Defines the selectedCategorie
-        /// </summary>
         public Categories selectedCategorie;
 
-        /// <summary>
-        /// Defines the name
-        /// </summary>
         public string name;
 
-        /// <summary>
-        /// Defines the isActive
-        /// </summary>
         public bool isActive;
 
-        /// <summary>
-        /// Gets the CategorieList
-        /// </summary>
+        public int userCategorieId;
         public ObservableCollection<Categories> CategorieList => categoriesList;
-
-        /// <summary>
-        /// Gets or sets the Name
-        /// </summary>
         public string Name
         {
             get => name;
             set { name = value; OnPropertyChanged(); }
         }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether IsActive
-        /// </summary>
         public bool IsActive
         {
             get => isActive;
             set { isActive = value; OnPropertyChanged(); }
         }
 
-        /// <summary>
-        /// Gets or sets the SelectedCategorie
-        /// </summary>
         public Categories SelectedCategorie
         {
             get => selectedCategorie;
             set { selectedCategorie = value; OnPropertyChanged(); LoadSelectedCategorie(); }
         }
 
-        /// <summary>
-        /// Defines the PropertyChanged
-        /// </summary>
+        public int UserCategorieId
+        {
+            get => userCategorieId;
+            set { userCategorieId = value; OnPropertyChanged(); }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
-        /// <summary>
-        /// The OnPropertyChanged
-        /// </summary>
-        /// <param name="name">The name<see cref="string"/></param>
         protected void OnPropertyChanged([CallerMemberName] string name = null) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
-        /// <summary>
-        /// The ValidateInputs
-        /// </summary>
-        /// <returns>The <see cref="bool"/></returns>
         public bool ValidateInputs()
         {
             if (string.IsNullOrWhiteSpace(Name))
@@ -96,33 +62,32 @@
             return true;
         }
 
-        /// <summary>
-        /// The ClearInputs
-        /// </summary>
         public void ClearInputs()
         {
             Name = string.Empty;
             IsActive = false;
         }
 
-        /// <summary>
-        /// The AddCategorie
-        /// </summary>
-        /// <returns>The <see cref="Task"/></returns>
         public async Task AddCategorie()
         {
             if (!ValidateInputs()) return;
 
-            var newCategorie = new Categories
-            {
-                Name = Name,
-                IsActive = IsActive,
-                CustomerId = Session.CurrentCustomer.CustomerId
-            };
-
             try
             {
                 using var context = new TableContext();
+
+                int userCategorieCount = await context.CategoriesT
+                    .Where(c => c.CustomerId == Session.CurrentCustomer.CustomerId)
+                    .CountAsync();
+
+                var newCategorie = new Categories
+                {
+                    Name = Name,
+                    IsActive = IsActive,
+                    UserCategorieId = userCategorieCount + 1,
+                    CustomerId = Session.CurrentCustomer.CustomerId
+                };
+
                 context.CategoriesT.Add(newCategorie);
                 await context.SaveChangesAsync();
                 await LoadCategories();
@@ -133,11 +98,6 @@
                 Debug.WriteLine($"Erreur lors de l'ajout de la catégorie : {ex.Message}");
             }
         }
-
-        /// <summary>
-        /// The UpdateCategorie
-        /// </summary>
-        /// <returns>The <see cref="Task"/></returns>
         public async Task UpdateCategorie()
         {
             if (SelectedCategorie == null || !ValidateInputs()) return;
@@ -160,11 +120,6 @@
                 Debug.WriteLine($"Erreur lors de la mise à jour de la catégorie : {ex.Message}");
             }
         }
-
-        /// <summary>
-        /// The DeleteCategorie
-        /// </summary>
-        /// <returns>The <see cref="Task"/></returns>
         public async Task DeleteCategorie()
         {
             if (SelectedCategorie == null) return;
@@ -186,11 +141,6 @@
                 Debug.WriteLine($"Erreur lors de la suppression de la catégorie : {ex.Message}");
             }
         }
-
-        /// <summary>
-        /// The LoadCategories
-        /// </summary>
-        /// <returns>The <see cref="Task"/></returns>
         public async Task LoadCategories()
         {
             try
@@ -210,9 +160,6 @@
             }
         }
 
-        /// <summary>
-        /// The LoadSelectedCategorie
-        /// </summary>
         public void LoadSelectedCategorie()
         {
             if (SelectedCategorie != null)

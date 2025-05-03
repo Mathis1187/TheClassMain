@@ -3,30 +3,13 @@
     using Microsoft.EntityFrameworkCore;
     using TheClassMain.Model;
 
-    /// <summary>
-    /// Defines the <see cref="TableContext" />
-    /// </summary>
     public class TableContext : DbContext
     {
-        /// <summary>
-        /// Gets or sets the CategoriesT
-        /// </summary>
         public DbSet<Categories> CategoriesT { get; set; }
 
-        /// <summary>
-        /// Gets or sets the FacturesT
-        /// </summary>
         public DbSet<Factures> FacturesT { get; set; }
 
-        /// <summary>
-        /// Gets or sets the CustomersT
-        /// </summary>
         public DbSet<Customer> CustomersT { get; set; }
-
-        /// <summary>
-        /// The OnConfiguring
-        /// </summary>
-        /// <param name="optionsBuilder">The optionsBuilder<see cref="DbContextOptionsBuilder"/></param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
@@ -34,10 +17,6 @@
                 options => options.EnableRetryOnFailure());
         }
 
-        /// <summary>
-        /// The OnModelCreating
-        /// </summary>
-        /// <param name="modelBuilder">The modelBuilder<see cref="ModelBuilder"/></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Factures>()
@@ -59,9 +38,6 @@
                 .OnDelete(DeleteBehavior.Restrict);
         }
 
-        /// <summary>
-        /// The CreateDatabase
-        /// </summary>
         public void CreateDatabase()
         {
             this.Database.EnsureCreated();

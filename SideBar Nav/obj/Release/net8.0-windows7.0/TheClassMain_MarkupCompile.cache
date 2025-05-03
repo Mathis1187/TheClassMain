@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\TheClassMain\SideBar Nav\obj\Release\net8.0-windows7.0\
+D:\TheClassMain\SideBar Nav\obj\Release\net8.0-windows7.0\
 TheClassMain
 none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
-E:\TheClassMain\SideBar Nav\App.xaml
-111594093432
+D:\TheClassMain\SideBar Nav\App.xaml
+121679666305
 
-18474311703
-240681562346
-MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Login.xaml;Pages\Settings.xaml;Themes\Generic.xaml;Themes\LoginStyle.xaml;
+20157498834
+240572905501
+MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Login.xaml;Pages\Register.xaml;Pages\Settings.xaml;Themes\Generic.xaml;Themes\LoginStyle.xaml;
 
 True
 
