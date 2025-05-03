@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TheClassMain"
         mc:Ignorable="d"
-        Title="MainWindow" SnapsToDevicePixels="True" Height="460" Width="800">
+        Title="MainWindow" SnapsToDevicePixels="True" Height="520" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="125"/>
+            <ColumnDefinition Width="130"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -20,6 +20,7 @@
             <local:NavButton Navlink="/Pages/Facture.xaml" Label="Facture" Margin="3,10" Padding="6" Icon="M4 22H20V2H4V22ZM13 18H11V16H13V18ZM13 14H11V8H13V14Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Categorie.xaml" Label="Categorie" Margin="3,10" Padding="6" Icon="M3 5H21C21.55 5 22 5.45 22 6V18C22 18.55 21.55 19 21 19H3C2.45 19 2 18.55 2 18V6C2 5.45 2.45 5 3 5ZM8 17V7H4V17H8ZM14 17V7H10V17H14ZM20 17V7H16V17H20Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Historique.xaml" Label="Historique" Margin="3,10" Padding="6" Icon="M12 4C8.13 4 5 7.13 5 11C5 14.87 8.13 18 12 18C15.87 18 19 14.87 19 11C19 7.13 15.87 4 12 4ZM12 16C9.24 16 7 13.76 7 11C7 8.24 9.24 6 12 6C14.76 6 17 8.24 17 11C17 13.76 14.76 16 12 16ZM12 7V9L15 10L12 11V13L9 12V10L12 9V7Z" HorizontalAlignment="Left"/>
+            <local:NavButton Navlink="/Pages/Notification.xaml" Label="Notification" Margin="3,10" Padding="6" Icon="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.36 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Compte.xaml" Label="Compte" Margin="3,10" Padding="6" Icon="M12 12C14.76 12 17 9.76 17 7S14.76 2 12 2 7 4.24 7 7 9.24 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" HorizontalAlignment="Left"/>
             <local:NavButton Navlink="/Pages/Settings.xaml" Label="Setting" Margin="3,10" Padding="6" Icon="M12 8C10.34 8 9 9.34 9 11S10.34 14 12 14 15 12.66 15 11 13.66 8 12 8ZM19.43 12.98C19.46 12.66 19.5 12.34 19.5 12S19.46 11.34 19.43 11.02L21.54 9.63C21.72 9.5 21.78 9.25 21.67 9.05L19.67 5.95C19.55 5.75 19.3 5.68 19.1 5.76L16.74 6.64C16.22 6.23 15.64 5.87 15 5.59L14.5 3H9.5L9 5.59C8.36 5.87 7.78 6.23 7.26 6.64L4.9 5.76C4.7 5.68 4.45 5.75 4.33 5.95L2.33 9.05C2.22 9.25 2.28 9.5 2.46 9.63L4.57 11.02C4.54 11.34 4.5 11.66 4.5 12S4.54 12.66 4.57 12.98L2.46 14.37C2.28 14.5 2.22 14.75 2.33 14.95L4.33 18.05C4.45 18.25 4.7 18.32 4.9 18.24L7.26 17.36C7.78 17.77 8.36 18.13 9 18.41L9.5 21H14.5L15 18.41C15.64 18.13 16.22 17.77 16.74 17.36L19.1 18.24C19.3 18.32 19.55 18.25 19.67 18.05L21.67 14.95C21.78 14.75 21.72 14.5 21.54 14.37L19.43 12.98Z" RenderTransformOrigin="-0.364,0.45" HorizontalAlignment="Left"/>
         </ListBox>

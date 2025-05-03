@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 D:\TheClassMain\SideBar Nav\App.xaml
-9-703764124
+121679666305
 
-151991473735
-2381468467760
-MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Settings.xaml;Themes\Generic.xaml;
+20157498834
+240572905501
+MainWindow.xaml;Pages\Calendrier.xaml;Pages\Categorie.xaml;Pages\Compte.xaml;Pages\Facture.xaml;Pages\Historique.xaml;Pages\Home.xaml;Pages\Login.xaml;Pages\Register.xaml;Pages\Settings.xaml;Themes\Generic.xaml;Themes\LoginStyle.xaml;
 
 True
 

@@ -1,32 +1,20 @@
-﻿namespace TheClassMain.Composants
+﻿namespace TheClassMain.Model
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
-    /// <summary>
-    /// Defines the <see cref="Categories" />
-    /// </summary>
     public class Categories
     {
-        /// <summary>
-        /// Gets or sets the Id
-        /// </summary>
         [Key]
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Name
-        /// </summary>
+        public int CategorieId { get; set; }
+        public int UserCategorieId { get; set; }
         public string Name { get; set; }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether IsActive
-        /// </summary>
         public bool IsActive { get; set; }
+        public int CustomerId { get; set; }
 
-        /// <summary>
-        /// Gets or sets the Factures
-        /// </summary>
+        [ForeignKey("CustomerId")]
+        public virtual Customer Customer { get; set; }
         public virtual ICollection<Factures> Factures { get; set; }
     }
 }
