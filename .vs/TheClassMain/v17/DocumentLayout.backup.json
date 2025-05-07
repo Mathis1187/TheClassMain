@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\TheClassMain\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "SideBar Nav\\ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "TableContext.cs",
+              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
+              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeToolTip": "SideBar Nav\\Query\\TableContext.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAMwCoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:49:37.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FactureViewModel.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
-              "RelativeToolTip": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAAALwAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:49:04.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\RegisterViewModel.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\ViewModel\\RegisterViewModel.cs",
-              "RelativeToolTip": "SideBar Nav\\ViewModel\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:48:49.702Z",
+              "WhenOpened": "2025-05-07T18:06:49.487Z",
               "EditorCaption": ""
             }
           ]
