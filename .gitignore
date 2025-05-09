@@ -47,3 +47,6 @@ _ReSharper*/
 *.swp
 *.DS_Store
 Thumbs.db
+# Fichiers de configuration utilisateur
+*.vc.db
+*.VC.db
