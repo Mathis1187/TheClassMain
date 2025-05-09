@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TheClassMain\\",
+  "WorkspaceRootPath": "D:\\projet_Entreprise\\home2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\theclassmain\\sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\projet_entreprise\\home2\\sidebar nav\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|d:\\projet_entreprise\\home2\\sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,28 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TableContext.cs",
-              "DocumentMoniker": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
-              "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
-              "ToolTip": "D:\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
-              "RelativeToolTip": "SideBar Nav\\Query\\TableContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAMwCoAAAAMAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\projet_Entreprise\\home2\\SideBar Nav\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\projet_Entreprise\\home2\\SideBar Nav\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:06:49.487Z",
+              "WhenOpened": "2025-05-07T18:09:48.829Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TableContext.cs",
+              "DocumentMoniker": "D:\\projet_Entreprise\\home2\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
+              "ToolTip": "D:\\projet_Entreprise\\home2\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeToolTip": "SideBar Nav\\Query\\TableContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwBAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T18:06:49.487Z"
             }
           ]
         }
