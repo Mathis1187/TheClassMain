@@ -24,6 +24,10 @@ namespace TheClassMain.ViewModel
         private int userFactureId;
         private string _facturesFilter = string.Empty;
         private Visibility _btnVisibility = Visibility.Hidden;
+        
+        public ObservableCollection<Factures> FacturesList => facturesList;
+        public ObservableCollection<Categories> CategoriesList => categoriesList;
+
         public ICollectionView FacturesCollectionView { get; }
         
         public string FacturesFilter
@@ -36,26 +40,7 @@ namespace TheClassMain.ViewModel
                 FacturesCollectionView.Refresh();
             }
         }
-
-        public FactureViewModel()
-        {
-            FacturesCollectionView = CollectionViewSource.GetDefaultView(facturesList);
-            FacturesCollectionView.Filter = FilterFactures;
-        }
-
-        private bool FilterFactures(object obj)
-        {
-            if (obj is Factures facture)
-            {
-                return (facture.Description?.IndexOf(FacturesFilter, StringComparison.OrdinalIgnoreCase) >= 0)
-                    || (facture.CategorieName?.IndexOf(FacturesFilter, StringComparison.OrdinalIgnoreCase) >= 0);
-            }
-            return false;
-        }
-
-        public ObservableCollection<Factures> FacturesList => facturesList;
-        public ObservableCollection<Categories> CategoriesList => categoriesList;
-
+        
         public Factures SelectedFacture
         {
             get => selectedFacture;
@@ -98,28 +83,20 @@ namespace TheClassMain.ViewModel
             set { userFactureId = value; OnPropertyChanged(); }
         }
 
-        public async Task LoadFactures()
+        public FactureViewModel()
         {
-            using var context = new TableContext();
-            var factures = await context.FacturesT
-                .Where(f => f.CustomerId == Session.CurrentCustomer.CustomerId)
-                .ToListAsync();
-
-            facturesList.Clear();
-            foreach (var facture in factures)
-                facturesList.Add(facture);
+            FacturesCollectionView = CollectionViewSource.GetDefaultView(facturesList);
+            FacturesCollectionView.Filter = FilterFactures;
         }
 
-        public async Task LoadCategories()
+        private bool FilterFactures(object obj)
         {
-            using var context = new TableContext();
-            var cats = await context.CategoriesT
-                .Where(c => c.CustomerId == Session.CurrentCustomer.CustomerId && c.IsActive)
-                .ToListAsync();
-
-            categoriesList.Clear();
-            foreach (var cat in cats)
-                categoriesList.Add(cat);
+            if (obj is Factures facture)
+            {
+                return (facture.Description?.IndexOf(FacturesFilter, StringComparison.OrdinalIgnoreCase) >= 0)
+                    || (facture.CategorieName?.IndexOf(FacturesFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+            }
+            return false;
         }
 
         public async Task AddFacture()
@@ -200,7 +177,43 @@ namespace TheClassMain.ViewModel
                 }
             }
         }
+        
+        public async Task LoadFactures()
+        {
+            using var context = new TableContext();
+            var factures = await context.FacturesT
+                .Where(f => f.CustomerId == Session.CurrentCustomer.CustomerId)
+                .ToListAsync();
 
+            facturesList.Clear();
+            foreach (var facture in factures)
+                facturesList.Add(facture);
+        }
+
+        public async Task LoadCategories()
+        {
+            using var context = new TableContext();
+            var cats = await context.CategoriesT
+                .Where(c => c.CustomerId == Session.CurrentCustomer.CustomerId && c.IsActive)
+                .ToListAsync();
+
+            categoriesList.Clear();
+            foreach (var cat in cats)
+                categoriesList.Add(cat);
+        }
+        
+        public void LoadSelectedFacture()
+        {
+            if (SelectedFacture != null)
+            {
+                BtnVisibility = Visibility.Visible;
+                Description = SelectedFacture.Description;
+                Montant = SelectedFacture.Montant.ToString("0.00");
+                Date = SelectedFacture.Date;
+                SelectedCategorie = CategoriesList.FirstOrDefault(c => c.CategorieId == SelectedFacture.CategorieId);
+            }
+        }
+        
         public bool ValidateInputs(out decimal parsedMontant)
         {
             parsedMontant = 0;
@@ -213,18 +226,6 @@ namespace TheClassMain.ViewModel
                 return false;
             }
             return true;
-        }
-
-        public void LoadSelectedFacture()
-        {
-            if (SelectedFacture != null)
-            {
-                BtnVisibility = Visibility.Visible;
-                Description = SelectedFacture.Description;
-                Montant = SelectedFacture.Montant.ToString("0.00");
-                Date = SelectedFacture.Date;
-                SelectedCategorie = CategoriesList.FirstOrDefault(c => c.CategorieId == SelectedFacture.CategorieId);
-            }
         }
 
         public void ClearInputs()

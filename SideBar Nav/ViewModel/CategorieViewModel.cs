@@ -33,32 +33,6 @@ namespace TheClassMain.ViewModel
         public ICollectionView CategoriesCollectionView { get; }
         public ObservableCollection<Categories> CategorieList => categoriesList;
         
-        public string CategoriesFilter
-        {
-            get => _categoriesFilter;
-            set
-            {
-                _categoriesFilter = value;
-                OnPropertyChanged(nameof(CategoriesFilter));
-                CategoriesCollectionView.Refresh();
-            }
-        }
-
-        public CategorieViewModel()
-        {
-            CategoriesCollectionView = CollectionViewSource.GetDefaultView(categoriesList);
-            CategoriesCollectionView.Filter = FilterCategories;
-        }
-        
-        private bool FilterCategories(object obj)
-        {
-            if (obj is Categories category)
-            {
-                return (category.Name?.IndexOf(CategoriesFilter, StringComparison.OrdinalIgnoreCase) >= 0);
-            }
-            return false;
-        }
-        
         public string Name
         {
             get => name;
@@ -87,24 +61,33 @@ namespace TheClassMain.ViewModel
             get => _btnVisibility;
             set { _btnVisibility = value; OnPropertyChanged(); }
         }
-
-        public bool ValidateInputs()
+        
+        public string CategoriesFilter
         {
-            if (string.IsNullOrWhiteSpace(Name))
+            get => _categoriesFilter;
+            set
             {
-                MessageBox.Show("Veuillez remplir tous les champs correctement.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
+                _categoriesFilter = value;
+                OnPropertyChanged(nameof(CategoriesFilter));
+                CategoriesCollectionView.Refresh();
             }
-            return true;
         }
 
-        public void ClearInputs()
+        public CategorieViewModel()
         {
-            Name = string.Empty;
-            IsActive = false;
-            BtnVisibility = Visibility.Hidden;
+            CategoriesCollectionView = CollectionViewSource.GetDefaultView(categoriesList);
+            CategoriesCollectionView.Filter = FilterCategories;
         }
-
+        
+        private bool FilterCategories(object obj)
+        {
+            if (obj is Categories category)
+            {
+                return (category.Name?.IndexOf(CategoriesFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+            }
+            return false;
+        }
+        
         public async Task AddCategorie()
         {
             if (!ValidateInputs()) return;
@@ -209,6 +192,23 @@ namespace TheClassMain.ViewModel
                 Name = SelectedCategorie.Name;
                 IsActive = SelectedCategorie.IsActive;
             }
+        }
+        
+        public bool ValidateInputs()
+        {
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                MessageBox.Show("Veuillez remplir tous les champs correctement.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            return true;
+        }
+
+        public void ClearInputs()
+        {
+            Name = string.Empty;
+            IsActive = false;
+            BtnVisibility = Visibility.Hidden;
         }
     }
 }
