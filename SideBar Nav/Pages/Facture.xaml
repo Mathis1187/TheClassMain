@@ -51,7 +51,7 @@
                         <GridView>
                             <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}" />
                             <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
-                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant}" />
+                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant, StringFormat={}{0:C}}" />
                             <GridViewColumn Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
                             <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
                         </GridView>
