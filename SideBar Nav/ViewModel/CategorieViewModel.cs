@@ -1,4 +1,6 @@
-﻿namespace TheClassMain.ViewModel
+﻿using System.Windows.Data;
+
+namespace TheClassMain.ViewModel
 {
     using System;
     using System.Collections.ObjectModel;
@@ -12,7 +14,8 @@
     using TheClassMain.Model;
     using TheClassMain.Query;
     using TheClassMain.Service;
-    public class CategorieViewModel : INotifyPropertyChanged
+    using TheClassMain.ViewModel;
+    public class CategorieViewModel : ViewModelBase
     {
         private ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
 
@@ -23,7 +26,13 @@
         public bool isActive;
 
         public int userCategorieId;
+        
+        private string _categoriesFilter = string.Empty;
+        private Visibility _btnVisibility = Visibility.Hidden;
+        
+        public ICollectionView CategoriesCollectionView { get; }
         public ObservableCollection<Categories> CategorieList => categoriesList;
+        
         public string Name
         {
             get => name;
@@ -46,28 +55,39 @@
             get => userCategorieId;
             set { userCategorieId = value; OnPropertyChanged(); }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged([CallerMemberName] string name = null) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-
-        public bool ValidateInputs()
+        
+        public Visibility BtnVisibility
         {
-            if (string.IsNullOrWhiteSpace(Name))
+            get => _btnVisibility;
+            set { _btnVisibility = value; OnPropertyChanged(); }
+        }
+        
+        public string CategoriesFilter
+        {
+            get => _categoriesFilter;
+            set
             {
-                MessageBox.Show("Veuillez remplir tous les champs correctement.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return false;
+                _categoriesFilter = value;
+                OnPropertyChanged(nameof(CategoriesFilter));
+                CategoriesCollectionView.Refresh();
             }
-            return true;
         }
 
-        public void ClearInputs()
+        public CategorieViewModel()
         {
-            Name = string.Empty;
-            IsActive = false;
+            CategoriesCollectionView = CollectionViewSource.GetDefaultView(categoriesList);
+            CategoriesCollectionView.Filter = FilterCategories;
         }
-
+        
+        private bool FilterCategories(object obj)
+        {
+            if (obj is Categories category)
+            {
+                return (category.Name?.IndexOf(CategoriesFilter, StringComparison.OrdinalIgnoreCase) >= 0);
+            }
+            return false;
+        }
+        
         public async Task AddCategorie()
         {
             if (!ValidateInputs()) return;
@@ -100,9 +120,12 @@
         }
         public async Task UpdateCategorie()
         {
-            if (SelectedCategorie == null || !ValidateInputs()) return;
-
-            try
+            if (SelectedCategorie == null || !ValidateInputs())
+            {
+                MessageBox.Show($"Please select a categorie first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            else
             {
                 using var context = new TableContext();
                 var categorieToUpdate = await context.CategoriesT.FindAsync(SelectedCategorie.CategorieId);
@@ -115,30 +138,31 @@
                     ClearInputs();
                 }
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Erreur lors de la mise à jour de la catégorie : {ex.Message}");
-            }
         }
         public async Task DeleteCategorie()
         {
-            if (SelectedCategorie == null) return;
-
-            try
+            if (SelectedCategorie == null)
             {
+                MessageBox.Show($"Please select a categorie first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            else
+            {
+                string message = "Are you sure you want to delete this category?";
+                string title = "Delete";
                 using var context = new TableContext();
                 var categorieToDelete = await context.CategoriesT.FindAsync(SelectedCategorie.CategorieId);
                 if (categorieToDelete != null)
                 {
-                    context.CategoriesT.Remove(categorieToDelete);
-                    await context.SaveChangesAsync();
-                    await LoadCategories();
-                    ClearInputs();
+                    var res = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (res == MessageBoxResult.Yes)
+                    {
+                        context.CategoriesT.Remove(categorieToDelete);
+                        await context.SaveChangesAsync();
+                        await LoadCategories();
+                        ClearInputs();
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine($"Erreur lors de la suppression de la catégorie : {ex.Message}");
             }
         }
         public async Task LoadCategories()
@@ -164,9 +188,27 @@
         {
             if (SelectedCategorie != null)
             {
+                BtnVisibility = Visibility.Visible;
                 Name = SelectedCategorie.Name;
                 IsActive = SelectedCategorie.IsActive;
             }
+        }
+        
+        public bool ValidateInputs()
+        {
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                MessageBox.Show("Veuillez remplir tous les champs correctement.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return false;
+            }
+            return true;
+        }
+
+        public void ClearInputs()
+        {
+            Name = string.Empty;
+            IsActive = false;
+            BtnVisibility = Visibility.Hidden;
         }
     }
 }

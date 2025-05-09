@@ -11,9 +11,44 @@
     <Grid>
         <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
             <StackPanel>
-
                 <TextBlock Text="Liste des categories" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
-                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategorieList}" Height="150" SelectedItem="{Binding SelectedCategorie}">
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBox Width="300"
+                             Text="{Binding CategoriesFilter, UpdateSourceTrigger=PropertyChanged}"
+                             VerticalAlignment="Center">
+                        <TextBox.Resources>
+                            <Style TargetType="TextBox">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="TextBox">
+                                            <Grid>
+                                                <ScrollViewer x:Name="PART_ContentHost"/>
+                                                <Border BorderBrush="Black" BorderThickness="1">
+                                                    <TextBlock Text="Filtrer les categories..."
+                                                               Foreground="Gray"
+                                                               Margin="5,0,0,0"
+                                                               VerticalAlignment="Center"
+                                                               IsHitTestVisible="False"
+                                                               Visibility="Collapsed"
+                                                               x:Name="Watermark"/>
+                                                </Border>
+                                            </Grid>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="Text" Value="">
+                                                    <Setter TargetName="Watermark" Property="Visibility" Value="Visible"/>
+                                                </Trigger>
+                                                <Trigger Property="IsKeyboardFocused" Value="True">
+                                                    <Setter TargetName="Watermark" Property="Foreground" Value="#aaa"/>
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                </StackPanel>
+                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategoriesCollectionView}" Height="150" SelectedItem="{Binding SelectedCategorie}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserCategorieId}" />
@@ -41,7 +76,7 @@
                             Width="100"
                             Margin="10,0,0,0"
                             Padding="5"
-                            Background="Blue"
+                            Background="#007bff"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
@@ -57,24 +92,39 @@
                 <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Left">
                     <Button Content="Mettre a jour"
                             Click="UpdateButton_Click"
-                            Width="120"
+                            Width="100"
                             Margin="0,0,10,0"
                             Padding="5"
                             Background="#28a745"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
-                            Cursor="Hand"/>
+                            Cursor="Hand"
+                            Visibility="{Binding BtnVisibility}"/>
 
                     <Button Content="Supprimer"
                             Click="DeleteButton_Click"
-                            Width="120"
+                            Width="100"
                             Padding="5"
                             Background="#dc3545"
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
-                            Cursor="Hand"/>
+                            Cursor="Hand"
+                            Visibility="{Binding BtnVisibility}"/>
+                    
+                    <Button Content="Annuler"
+                            Width="100"
+                            Margin="10,0,0,0"
+                            Padding="5"
+                            Background="Red" 
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            VerticalAlignment="Center"
+                            Click="AnnulerButton_Click"
+                            Visibility="{Binding BtnVisibility}"/>
                 </StackPanel>
 
             </StackPanel>

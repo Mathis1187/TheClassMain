@@ -5,12 +5,13 @@ namespace TheClassMain.Pages
     using TheClassMain.ViewModel;
     public partial class Categorie : Page
     {
-        private CategorieViewModel viewModel => (CategorieViewModel)DataContext;
+        private readonly CategorieViewModel viewModel;
 
         public Categorie()
         {
             InitializeComponent();
-            DataContext = new CategorieViewModel();
+            viewModel = new CategorieViewModel();
+            DataContext = viewModel;
             Loaded += Categorie_Loaded;
         }
         private async void Categorie_Loaded(object sender, RoutedEventArgs e)
@@ -31,6 +32,10 @@ namespace TheClassMain.Pages
         private async void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             await viewModel.DeleteCategorie();
+        }
+        private void AnnulerButton_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.ClearInputs();
         }
     }
 }

@@ -6,12 +6,13 @@
 
     public partial class Facture : Page
     {
-        private FactureViewModel viewModel => (FactureViewModel)DataContext;
+        private readonly FactureViewModel viewModel;
 
         public Facture()
         {
             InitializeComponent();
-            DataContext = new FactureViewModel();
+            viewModel = new FactureViewModel();
+            DataContext = viewModel;
             Loaded += Facture_Loaded;
         }
 
@@ -34,6 +35,11 @@
         private async void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             await viewModel.DeleteFacture();
+        }
+
+        private void AnnulerButton_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.ClearInputs();
         }
     }
 }
