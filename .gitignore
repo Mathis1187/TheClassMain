@@ -7,8 +7,8 @@
 *.vsidx
 
 # === Dossiers de build ===
-bin/
-obj/
+*.bin/
+*.obj/
 
 # === Fichiers de build temporaires ===
 *.log
