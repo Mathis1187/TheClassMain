@@ -1,58 +1,54 @@
-﻿namespace TheClassMain.Pages
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Windows.Controls;
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+using Microsoft.EntityFrameworkCore;
+using TheClassMain.Model;
+using TheClassMain.Service;
+using System.Windows.Data;
+using TheClassMain.Query;
 
+namespace TheClassMain.Pages
+{
     public partial class Calendrier : Page
     {
-        private List<ObjetCool> listedObjets;
+        public ObservableCollection<Factures> FacturesList { get; set; } = new ObservableCollection<Factures>();
+        public ObservableCollection<Factures> FacturesDuJour { get; set; } = new ObservableCollection<Factures>();
+
         public Calendrier()
         {
             InitializeComponent();
-
-            listedObjets = new List<ObjetCool>{
-                new ObjetCool{ date = DateTime.Today, titre ="ce rendre a LURSSAF" },
-                new ObjetCool { date = DateTime.Today.AddDays(4), titre = "truc a faire2" },
-            };
-            //https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.calendar.blackoutdates?view=windowsdesktop-9.0
-            //quand on clique sur une date
-            CalendrierCool26x.SelectedDatesChanged += dateChoisi;
+            DataContext = this;
+            CalendrierCool26x.SelectedDatesChanged += DateChoisie;
+            _ = ChargerFactures();
         }
 
-        private void dateChoisi(object sender, SelectionChangedEventArgs e)
+        private async Task ChargerFactures()
         {
-            if (CalendrierCool26x.SelectedDate != null)
+            using var context = new TableContext();
+            var factures = await context.FacturesT
+                .Where(f => f.CustomerId == Session.CurrentCustomer.CustomerId)
+                .Include(f => f.Categorie)
+                .ToListAsync();
+
+            FacturesList.Clear();
+            foreach (var f in factures)
+                FacturesList.Add(f);
+        }
+
+        private void DateChoisie(object sender, SelectionChangedEventArgs e)
+        {
+            if (CalendrierCool26x.SelectedDate is DateTime date)
             {
-                DateTime dateee = CalendrierCool26x.SelectedDate.Value;
-                ObjetCool evenementTrouverr = null;
-                foreach (ObjetCool obj in listedObjets)
-                {
-                    if (obj.date.Date == dateee.Date)
-                    {
-                        evenementTrouverr = obj;
-                        break;
-                    }
-                }
-                //pour montrer si ya un truc a faire ! 
-                if (evenementTrouverr != null)
-                {
-                    rapelleDujour.Text = "TA UN TRUC A FAIRE !!! : " + evenementTrouverr.titre;
-                }
-                else
-                {
-                    rapelleDujour.Text = "rien a faire ! ";
-                }
+                var facturesTrouvées = FacturesList
+                    .Where(f => f.Date.Date == date.Date)
+                    .ToList();
+
+                FacturesDuJour.Clear();
+                foreach (var f in facturesTrouvées)
+                    FacturesDuJour.Add(f);
             }
         }
-    }
-
-    //juste pour listant pour testerrrr! 
-
-    public class ObjetCool
-    {
-        public DateTime date { get; set; }
-
-        public string titre { get; set; }
     }
 }
