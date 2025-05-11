@@ -8,37 +8,74 @@
       d:DesignHeight="550" d:DesignWidth="800"
       Title="Home">
 
-    <Grid Background="#808080">
-        <StackPanel>
+    <Border Padding="10" BorderThickness="2" BorderBrush="Aqua">
+        <StackPanel Background="White">
 
-            <!--Title Home page-->
+            <!-- Welcome <Username> -->
+            <TextBlock Text="Welcome Bob, " FontSize="30" FontWeight="Bold" Margin="10 10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
 
-            <StackPanel Margin="15">
-                <TextBlock Text="Application Name" FontFamily="ubuntu" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="50" FontWeight="Bold"/>
+                <!-- Redirection vers facture -->
+                <Border Grid.Column="0" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Left">
+                    <StackPanel>
+                        
+                        <TextBlock Text="Make facture" FontWeight="Bold" Margin="10 8"/>
+
+                        <TextBlock Text="Créez et gérez vos factures rapidement pour suivre les paiements et les régler le sans prendre de retard." 
+                           TextWrapping="Wrap" 
+                           Margin="10 0 10 10" 
+                           FontSize="12" 
+                           Foreground="Gray"/>
+
+                        <!-- link vers facture -->
+                        <Button HorizontalAlignment="Left" Content="+ New Facture"
+                                Width="100"
+                                Margin="10 5"
+                                />
+
+                    </StackPanel>
+                </Border>               
+                
+                <Border Grid.Column="1" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5" Width="300" HorizontalAlignment="Left">
+                    <StackPanel>
+                        
+                        <TextBlock Text="Make facture" FontWeight="Bold" Margin="10 8"/>
+
+                        <TextBlock Text="Créez et gérez vos factures rapidement pour suivre les paiements et les régler le sans prendre de retard." 
+                           TextWrapping="Wrap" 
+                           Margin="10 0 10 10" 
+                           FontSize="12" 
+                           Foreground="Gray"/>
+
+                        <Button HorizontalAlignment="Left" Content="+ New Facture"
+                                Width="100"
+                                Margin="10 5"
+                                />
+                    </StackPanel>
+                   
+                </Border>
+            </Grid>
+
+            <StackPanel Margin="10,20,10,0">
+                <TextBlock Text="Factures d’aujourd’hui" FontSize="20" FontWeight="Bold" Margin="0 10"/>
+
+                <ListView ItemsSource="{Binding FacturesCollectionView}" SelectedItem="{Binding SelectedFacture}" Height="150">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="100" Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}" />
+                            <GridViewColumn Width="250" Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Width="70" Header="Montant" DisplayMemberBinding="{Binding Montant}" />
+                            <GridViewColumn Width="100" Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Width="100" Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
             </StackPanel>
-            
-            
-            <!--Element de presentation-->
-            <Border  Background="#D9D9D9" Margin="10"  Width="500" BorderBrush="Black" CornerRadius="10" BorderThickness="2">
-                <StackPanel Cursor="Hand">
-                    <TextBlock Margin="0 10" Width="490" Height="105" Text="Facture" FontFamily="ubuntu" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="30" FontWeight="Bold"/>
-                </StackPanel>
-            </Border> 
-            
-            <Border  Background="#D9D9D9" Margin="10"  Width="500" BorderBrush="Black" CornerRadius="10" BorderThickness="2">
-                <StackPanel Cursor="Hand">
-                    <TextBlock Margin="0 10" Width="490" Height="105" Text="Budget" FontFamily="ubuntu" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="30" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
-            
-            <Border  Background="#D9D9D9" Margin="10"  Width="500" BorderBrush="Black" CornerRadius="10" BorderThickness="2">
-                <StackPanel Cursor="Hand">
-                    <TextBlock Margin="0 10" Width="490" Height="105" Text="Transaction" FontFamily="ubuntu" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="30" FontWeight="Bold"/>
-                </StackPanel>
-            </Border>
-           
 
-            
         </StackPanel>
-    </Grid>
+    </Border>
 </Page>
