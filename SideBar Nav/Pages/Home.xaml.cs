@@ -15,12 +15,12 @@
 
         private void NavigateToAccount_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Compte()); // Remplace par le nom exact de ta page
+            NavigationService?.Navigate(new Compte());
         }        
         
         private void NavigateToFacture_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Facture()); // Remplace par le nom exact de ta page
+            NavigationService?.Navigate(new Facture());
         }
     }
 }
