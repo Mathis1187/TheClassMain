@@ -16,6 +16,7 @@ namespace TheClassMain.ViewModel
         private ObservableCollection<Factures> facturesAujourdHui = new ObservableCollection<Factures>();
         private Factures selectedFacture;
 
+
         public ObservableCollection<Factures> FacturesAujourdhuiList => facturesAujourdHui;
         public ICollectionView FacturesCollectionView { get; }
 
@@ -24,7 +25,7 @@ namespace TheClassMain.ViewModel
             get => selectedFacture;
             set { selectedFacture = value; OnPropertyChanged(); }
         }
-        
+
         public HomeViewModel()
         {
             FacturesCollectionView = CollectionViewSource.GetDefaultView(facturesAujourdHui);
