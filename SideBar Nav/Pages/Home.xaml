@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TheClassMain.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="850"
       Title="Home">
 
 
@@ -15,8 +15,12 @@
             
             
             <!-- Welcome <Username> -->
-            <TextBlock Text="Welcome tot he Home page" FontSize="30" FontWeight="Bold" Margin="10 10"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Grid.Column="0" Text="Welcome to the Home page user," FontSize="23" FontWeight="SemiBold" Margin="10 10"/>
+                <TextBlock Grid.Column="1" Text="{Binding CustomerName}" FontSize="30" FontWeight="Bold" Margin="10 0"/>
 
+            </StackPanel>
+            
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -24,18 +28,17 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Redirection vers facture -->
-                <Border Grid.Column="0" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Left">
+                <Border Grid.Column="0" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5">
                     <StackPanel>
 
                         <TextBlock Text="Make facture" FontWeight="Bold" Margin="10 8"/>
 
-                        <TextBlock Text="Créez et gérez vos factures rapidement pour suivre les paiements et les régler le sans prendre de retard." 
+                        <TextBlock Text="Créez et gérez vos factures rapidement pour suivre les paiements et les régler le sans prendre de retard ainsi éviter vous pourrai éviter des frais supplémentaire." 
                            TextWrapping="Wrap" 
-                           Margin="10 5" 
+                           Margin="10 12" 
                            FontSize="12" 
                            Foreground="Gray"/>
 
-                        <!-- link vers facture -->
                         <Button HorizontalAlignment="Left" Content="+ New Facture"
                                 Width="100"
                                 Background="#007bff" 
@@ -48,12 +51,13 @@
                     </StackPanel>
                 </Border>
 
-                <Border Grid.Column="1" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5" Width="300" HorizontalAlignment="Left">
+                <!-- Redirection vers compte -->
+                <Border Grid.Column="1" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5" >
                     <StackPanel>
 
                         <TextBlock Text="Make New Account" FontWeight="Bold" Margin="10 8"/>
 
-                        <TextBlock Text="Créez un nouveau compte pour ajouter un client et gérer ses factures, paiements et rappels de manière efficace."
+                        <TextBlock Text="Créez un nouveau compte pour ajouter un client et gérer ses factures, paiements et rappels de manière efficace et recever des notification vous rappeler des taches ou factures n'ayant pas encore été effectué"
                                    TextWrapping="Wrap"
                                    Margin="10 0 10 10"
                                    FontSize="12"
@@ -61,16 +65,18 @@
 
 
                         <Button HorizontalAlignment="Left" Content="+ New Account"
-                                Width="100"
-                                Background="#007bff"
-                                Margin="10 5"
-                                Padding="5"
-                                Cursor="Hand"
-                                Click="NavigateToAccount_Click"/>
+                        Width="100"
+                        Background="#007bff" 
+                        Margin="10 5"
+                        Padding="5"
+                        Cursor="Hand"
+                        Click="NavigateToAccount_Click"/>
                     </StackPanel>
 
                 </Border>
             </Grid>
+
+            <!-- Affichage des facture d'aujourdhui -->
 
             <StackPanel Margin="10,20,10,0">
                 <TextBlock Text="Factures d’aujourd’hui" FontSize="20" FontWeight="Bold" Margin="0 10"/>
@@ -88,25 +94,44 @@
                 </ListView>
             </StackPanel>
 
+            <!-- S'Envoyer les facture d'aujourdhui via email -->
+
             <StackPanel Orientation="Horizontal" Margin="10">
-                <!--<Button Content="📄 Générer PDF" Width="120" Margin="5" Cursor="Hand"/>-->
                 <Button Content="📤 Envoyer par email" Width="150" Margin="5" Cursor="Hand"/>
             </StackPanel>
 
-
+            <!-- Affichage nombre et montant total des facture -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="10 10">
-                <Border Background="#dff0d8" Padding="10" CornerRadius="5" Margin="5">
+                <!--Nombre total de factures pour today-->
+                <Border Background="#dff0d8" Padding="7" CornerRadius="5" Margin="5">
                     <StackPanel>
-                        <TextBlock Text="Nombre Facture Aujourd’hui" FontWeight="Bold" FontSize="12"/>
+                        <TextBlock Text="📅 Nombre Facture Aujourd’hui" FontWeight="Bold" FontSize="12"/>
                         <TextBlock HorizontalAlignment="Center"  Text="{Binding NombreFacturesAujourdhui}" FontSize="16"/>
                     </StackPanel>
-                </Border>
-                <Border Background="#fcf8e3" Padding="10" CornerRadius="5" Margin="5">
+                </Border>                
+                
+                <!--Nombre total de factures en tout-->
+                <Border Background="#dff0d8" Padding="7" CornerRadius="5" Margin="5">
                     <StackPanel>
-                        <TextBlock Text="Total des Factures Aujourd’hui" FontWeight="Bold" FontSize="12"/>
-                        <TextBlock HorizontalAlignment="Center" Text="{Binding TotalFactureAujourdhui}" FontSize="16"/>
+                        <TextBlock Text="📅 Nombre Facture Total" FontWeight="Bold" FontSize="12"/>
+                        <TextBlock HorizontalAlignment="Center"  Text="{Binding NombreTotalFactures}" FontSize="16"/>
                     </StackPanel>
                 </Border>
+                
+                <Border Background="#fcf8e3" Padding="7" CornerRadius="5" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="Montant des Factures Aujourd’hui" FontWeight="Bold" FontSize="12"/>
+                        <TextBlock HorizontalAlignment="Center" Text="{Binding TotalFactureAujourdhui}" FontSize="16"/>
+                    </StackPanel>
+                </Border>        
+                
+                <Border Background="#fcf8e3" Padding="7" CornerRadius="5" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="Montant des Factures Total" FontWeight="Bold" FontSize="12"/>
+                        <TextBlock HorizontalAlignment="Center" Text="{Binding TotalFactures}" FontSize="16"/>
+                    </StackPanel>
+                </Border>                           
+                
 
             </StackPanel>
 

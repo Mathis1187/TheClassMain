@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\navbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\model\\factures.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\App.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\App.xaml",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "NavButton.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\NavButton.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\NavButton.cs",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\Pages\\Home.xaml.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml.cs",
@@ -147,35 +147,37 @@
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\HomeViewModel.cs",
-              "RelativeToolTip": "SideBar Nav\\ViewModel\\HomeViewModel.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\HomeViewModel.cs*",
+              "RelativeToolTip": "SideBar Nav\\ViewModel\\HomeViewModel.cs*",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwF0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T23:48:18.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Facture.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\Pages\\Facture.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
               "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\Pages\\Facture.xaml",
               "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-10T23:52:12.745Z"
+              "WhenOpened": "2025-05-10T23:52:12.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "FactureViewModel.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
               "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
               "RelativeToolTip": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAAwFMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T23:47:16.141Z"
+              "WhenOpened": "2025-05-10T23:47:16.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -214,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\Model\\Customer.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Model\\Customer.cs",
