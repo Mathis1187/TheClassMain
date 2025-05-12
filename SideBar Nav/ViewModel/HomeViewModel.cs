@@ -16,9 +16,24 @@ namespace TheClassMain.ViewModel
         private ObservableCollection<Factures> facturesAujourdHui = new ObservableCollection<Factures>();
         private Factures selectedFacture;
 
+        private int nombreFacturesAujourdhui;
+        private decimal totalFactureAujourdhui;
 
         public ObservableCollection<Factures> FacturesAujourdhuiList => facturesAujourdHui;
         public ICollectionView FacturesCollectionView { get; }
+
+
+        public int NombreFacturesAujourdhui
+        {
+            get => nombreFacturesAujourdhui;
+            set { nombreFacturesAujourdhui = value; OnPropertyChanged(); }
+        }
+
+        public decimal TotalFactureAujourdhui
+        {
+            get => totalFactureAujourdhui;
+            set { totalFactureAujourdhui = value; OnPropertyChanged(); }
+        }
 
         public Factures SelectedFacture
         {
@@ -32,6 +47,7 @@ namespace TheClassMain.ViewModel
             LoadFacturesAujourdhui();
         }
 
+
         public async void LoadFacturesAujourdhui()
         {
             using var context = new TableContext();
@@ -42,9 +58,16 @@ namespace TheClassMain.ViewModel
                             f.Date.Date == today)
                 .ToListAsync();
 
+            //factures.Sum(f => f.Montant);
+
             facturesAujourdHui.Clear();
             foreach (var f in factures)
                 facturesAujourdHui.Add(f);
+
+
+            NombreFacturesAujourdhui = factures.Count;
+            TotalFactureAujourdhui = factures.Sum(f => f.Montant);
+
         }
     }
 }
