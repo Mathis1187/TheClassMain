@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\wpf\\project_entreprise\\home\\sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -131,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\Pages\\Home.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml",
@@ -143,13 +143,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeViewModel.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\HomeViewModel.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\HomeViewModel.cs",
               "ToolTip": "C:\\Users\\papem\\Desktop\\WPF\\project_Entreprise\\home\\SideBar Nav\\ViewModel\\HomeViewModel.cs*",
               "RelativeToolTip": "SideBar Nav\\ViewModel\\HomeViewModel.cs*",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAcwE8AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwF0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T23:48:18.236Z",
               "EditorCaption": ""
