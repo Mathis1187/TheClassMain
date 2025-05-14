@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\viewmodel\\compteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\compteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\pages\\compte.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\compte.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\viewmodel\\compteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\compteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\papem\\desktop\\main\\wpf\\project_entreprise\\compte\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +58,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "SideBar Nav\\ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T21:25:18.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CompteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\CompteViewModel.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\CompteViewModel.cs",
-              "ToolTip": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\CompteViewModel.cs*",
-              "RelativeToolTip": "SideBar Nav\\ViewModel\\CompteViewModel.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowDYAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\CompteViewModel.cs",
+              "RelativeToolTip": "SideBar Nav\\ViewModel\\CompteViewModel.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T20:44:31.798Z",
               "EditorCaption": ""
@@ -73,14 +90,14 @@
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Compte.xaml.cs",
               "ToolTip": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Pages\\Compte.xaml.cs",
               "RelativeToolTip": "SideBar Nav\\Pages\\Compte.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-14T17:05:47.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Compte.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Pages\\Compte.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Compte.xaml",
@@ -92,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FactureViewModel.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
@@ -105,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Facture.xaml.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Pages\\Facture.xaml.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml.cs",
@@ -118,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Facture.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Pages\\Facture.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
@@ -130,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Pages\\Home.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml",
@@ -141,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml.cs",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TableContext.cs",
               "DocumentMoniker": "C:\\Users\\papem\\Desktop\\Main\\WPF\\project_Entreprise\\compte\\SideBar Nav\\Query\\TableContext.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
