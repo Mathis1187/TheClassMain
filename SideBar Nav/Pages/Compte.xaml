@@ -8,15 +8,15 @@
       d:DesignHeight="650" d:DesignWidth="600"
       Title="Compte">
 
-    <Grid Background="#f1f3f5">
+    <Grid>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
 
         </Grid.ColumnDefinitions>
-       
-        
-        <StackPanel Grid.Column="0">
+
+
+        <StackPanel Margin="10" Background="#f1f3f5" Grid.Column="0" HorizontalAlignment="Center">
             <TextBlock Text="Ton Compte" FontSize="20" Margin="20 10" FontWeight="Bold"/>
 
             <TextBlock Text="Ici est une vue de votre compte. vous pouvez gérez votre profile et changer votre mot de passe" 
@@ -60,8 +60,15 @@
                 <TextBlock Text="Supprimer Compte" Margin="0 10" FontWeight="Bold"/>
                 <TextBlock TextWrapping="Wrap" Text="Cette action est irréversible. En supprimant votre compte, toutes vos données personnelles, historiques de factures et préférences seront définitivement effacées de notre système.Êtes-vous sûr(e) de vouloir continuer ?"
                FontSize="10"/>
-                
-                <Button Content="Delete Account" Margin="0 10 0 0" Background="Red"/>
+
+                <Button Content="Delete Account" Margin="10" Background="Red" Foreground="White" 
+                    BorderThickness="0" Padding="5"  Height="35">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
 
         </StackPanel>
