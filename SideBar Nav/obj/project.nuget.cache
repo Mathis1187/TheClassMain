@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iAF0U/PdCKU=",
+  "dgSpecHash": "MmRrmqCZzMI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+  "projectFilePath": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yanis\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\yanis\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

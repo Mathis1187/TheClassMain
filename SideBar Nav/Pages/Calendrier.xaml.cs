@@ -41,12 +41,12 @@ namespace TheClassMain.Pages
         {
             if (CalendrierCool26x.SelectedDate is DateTime date)
             {
-                var facturesTrouvées = FacturesList
+                var facturesFound = FacturesList
                     .Where(f => f.Date.Date == date.Date)
                     .ToList();
 
                 FacturesDuJour.Clear();
-                foreach (var f in facturesTrouvées)
+                foreach (var f in facturesFound)
                     FacturesDuJour.Add(f);
             }
         }

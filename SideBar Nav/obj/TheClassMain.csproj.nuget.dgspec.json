@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {}
+    "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {
+    "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\TheClassMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+        "projectUniqueName": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
         "projectName": "TheClassMain",
-        "projectPath": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
+        "projectPath": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\TheClassMain.csproj",
         "packagesPath": "C:\\Users\\yanis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yanis\\Desktop\\TheClassMain\\SideBar Nav\\obj\\",
+        "outputPath": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
