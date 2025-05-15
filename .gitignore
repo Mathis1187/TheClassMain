@@ -50,3 +50,11 @@ Thumbs.db
 # Fichiers de configuration utilisateur
 *.vc.db
 *.VC.db
+.idea/
+*.sln.iml
+TestResults/
+*.trx
+*.props
+*.targets
+*.rej
+*.merge
