@@ -49,6 +49,8 @@ namespace TheClassMain.ViewModel
         public CompteViewModel()
         {
             LoadUserInfo();
+            DeleteCustomer();
+
         }
 
         public void LoadUserInfo()
@@ -60,6 +62,27 @@ namespace TheClassMain.ViewModel
             UserPassword = user.Pwd;
             UserId = user.CustomerId;
         }
+
+
+
+        public async Task DeleteCustomer()
+        {
+            using (var context = new TableContext())
+            {
+                var customer = await context.CustomersT.FindAsync(UserId);
+
+                if (customer != null)
+                {
+                    MessageBox.Show("Client trouvé.");
+                }
+                else
+                {
+                    MessageBox.Show("Client non trouvé.");
+                }
+            }
+        }
+
+
 
     }
 }
