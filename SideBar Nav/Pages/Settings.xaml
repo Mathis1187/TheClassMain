@@ -11,41 +11,65 @@
     <Grid Background="#f1f3f5" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-  
         <TextBlock Text="Settings"
-                   FontFamily="Ubuntu"
-                   HorizontalAlignment="Center"
-                   FontSize="60"
-                   FontWeight="Bold"
-                   Margin="0,20,0,40"/>
-        
-        
-        <StackPanel Grid.Row="1"
-                    Orientation="Horizontal"
-                    VerticalAlignment="Top"
-                    HorizontalAlignment="Center"
-                    Width="Auto"
-                    Margin="0,20,0,0">
+               FontFamily="Ubuntu"
+               HorizontalAlignment="Center"
+               FontSize="60"
+               FontWeight="Bold"
+               Margin="0,20,0,40"/>
 
+        <StackPanel Grid.Row="1"
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,20">
             <Button Content="Supprimer tous les factures"
-                    FontSize="18"
-                    Padding="10"
-                    Background="#E53935"
-                    Foreground="White"
-                    Margin="0,0,20,0"
-                    Command="{Binding DeleteAllFacturesCommand}"/>
+                FontSize="18"
+                Padding="10"
+                Background="#E53935"
+                Foreground="White"
+                Margin="0,0,30,0"
+                Command="{Binding DeleteAllFacturesCommand}"/>
 
             <Button Content="Supprimer tous les categories"
-                    FontSize="18"
-                    Padding="10"
-                    Background="#E53935"
-                    Foreground="White"/>
+                FontSize="18"
+                Padding="10"
+                Background="#E53935"
+                Foreground="White"
+                Command="{Binding DeleteAllCategoriesCommand}"/>
         </StackPanel>
 
+        <Button Grid.Row="2"
+            Content="Supprimer tous"
+            FontSize="18"
+            Padding="10"
+            Background="#E53935"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,20"
+            Command="{Binding DeleteAllCategoriesCommand}"/>
 
+        <CheckBox Grid.Row="3"
+              Content="Activer les notifications"
+              FontSize="18"
+              HorizontalAlignment="Center"
+              Margin="0,0,0,20"/>
+
+        <Button Grid.Row="4"
+            Content="Log out"
+            FontSize="20"
+            Width="500"
+            Padding="10"
+            Background="#E53935"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,20"
+            Command="{Binding LogoutCommand}"/>
     </Grid>
 
 </Page>

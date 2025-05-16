@@ -9,6 +9,6 @@
       Title="Notification">
 
     <Grid Background="#f1f3f5">
-        <TextBlock Text="Notification" FontFamily="ubuntu"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold"/>
+        <TextBlock Text="Notification" FontFamily="ubuntu"  FontSize="60" FontWeight="Bold"/>
     </Grid>
 </Page>
