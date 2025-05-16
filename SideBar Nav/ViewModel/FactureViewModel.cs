@@ -10,9 +10,12 @@ using TheClassMain.Model;
 using TheClassMain.Query;
 using TheClassMain.Service;
 
+using CommunityToolkit.Mvvm.Input;
+
+
 namespace TheClassMain.ViewModel
 {
-    public class FactureViewModel : ViewModelBase
+    public partial class FactureViewModel : ViewModelBase
     {
         private ObservableCollection<Factures> facturesList = new ObservableCollection<Factures>();
         private ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
@@ -188,6 +191,7 @@ namespace TheClassMain.ViewModel
             facturesList.Clear();
             foreach (var facture in factures)
                 facturesList.Add(facture);
+
         }
 
         public async Task LoadCategories()
@@ -236,6 +240,33 @@ namespace TheClassMain.ViewModel
             SelectedCategorie = null;
             SelectedFacture = null;
             BtnVisibility = Visibility.Hidden;
+        }
+
+        [RelayCommand]
+        public async Task DeleteAllFactures()
+        {
+            string message = "Are you sure you want to delete ALL factures?";
+            string title = "Delete All";
+
+            var res = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (res == MessageBoxResult.Yes)
+            {
+                using var context = new TableContext();
+
+                var allFactures = context.FacturesT.ToList();
+
+                if (allFactures.Any())
+                {
+                    context.FacturesT.RemoveRange(allFactures);
+                    await context.SaveChangesAsync();
+                    await LoadFactures();
+                }
+                else
+                {
+                    MessageBox.Show("There are no factures to delete.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
         }
     }
 }

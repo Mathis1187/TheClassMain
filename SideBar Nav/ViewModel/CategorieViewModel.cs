@@ -210,5 +210,7 @@ namespace TheClassMain.ViewModel
             IsActive = false;
             BtnVisibility = Visibility.Hidden;
         }
+
+
     }
 }
