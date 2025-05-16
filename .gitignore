@@ -1,0 +1,60 @@
+# === Fichiers spécifiques à Visual Studio ===
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.vsidx
+
+# === Dossiers de build ===
+bin/
+obj/
+
+# === Fichiers de build temporaires ===
+*.log
+*.tmp
+*.bak
+*.cache
+*.pdb
+*.mdb
+
+# === Fichiers liés au design XAML générés ===
+*.g.cs
+*.g.i.cs
+*.xaml.cs
+
+# === Fichiers NuGet ===
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.nuget.props
+*.nuget.targets
+*.dgspec.json
+
+# === Dossiers de package ===
+packages/
+*.ncrunch*
+*.vshost.*
+_ReSharper*/
+
+# === Autres fichiers et dossiers temporaires ===
+*.dbmdl
+*.orig
+*.scc
+*.bak
+*.tmp
+*.swp
+*.DS_Store
+Thumbs.db
+# Fichiers de configuration utilisateur
+*.vc.db
+*.VC.db
+.idea/
+*.sln.iml
+TestResults/
+*.trx
+*.props
+*.targets
+*.rej
+*.merge
