@@ -71,11 +71,11 @@ namespace TheClassMain.ViewModel
 
                 if (customer != null)
                 {
-                    MessageBox.Show("Client trouvé.");
+                  //  MessageBox.Show("Client trouvé.");
                 }
                 else
                 {
-                    MessageBox.Show("Client non trouvé.");
+                  //  MessageBox.Show("Client non trouvé.");
                 }
             }
         }
