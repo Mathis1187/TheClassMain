@@ -9,30 +9,20 @@
  Title="Calendrier">
 
     <Grid Margin="20"  Background="AliceBlue">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="Calendrier de factures" FontSize="50" FontWeight="Bold" Foreground="#FF7A5CFA" HorizontalAlignment="Center"/>
+        
+        <Calendar HorizontalAlignment="Center" Grid.Row="1" Name="CalendrierFacture" />
 
-
-        <TextBlock Text="Calendrier 26xx"
-
- FontSize="70"
- FontWeight="Bold"
- Foreground="#FF7A5CFA"
- HorizontalAlignment="Center"
- />
-
-        <Border  Margin="20,100,0,20" Width="380"  HorizontalAlignment="Left" >
-            <Calendar Name="CalendrierCool26x"
-
- FontSize="18"
- Background="White"/>
-        </Border>
-
-        <Border  Background="White" Margin="420,100,20,20" VerticalAlignment="Top">
+        <Border Background="White" VerticalAlignment="Center" Grid.Row="2">
             <StackPanel>
-                <TextBlock Name="rapelleDujour"
- Text="Choisis une date ! "
- FontSize="24"
- FontWeight="Bold"/>
-
+                <TextBlock Text="Choisis une date ! " FontSize="24" FontWeight="Bold"/>
                 <ListView ItemsSource="{Binding FacturesDuJour}" Margin="20" Height="200">
                     <ListView.View>
                         <GridView>

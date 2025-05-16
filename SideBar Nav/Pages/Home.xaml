@@ -62,18 +62,18 @@
                     <StackPanel>
 
                         <TextBlock 
-                            Text="Make New Account" 
+                            Text="Make New Categorie" 
                             FontWeight="Bold" 
                             Margin="10 8"/>
 
-                        <TextBlock Text="Créez un nouveau compte pour ajouter un client et gérer ses factures, paiements et rappels de manière efficace et recever des notification vous rappeler des taches ou factures n'ayant pas encore été effectué"
+                        <TextBlock Text="Créez et gérez vos categorie rapidement pour donner une categorie au factue." 
                                    TextWrapping="Wrap"
                                    Margin="10 0 10 10"
                                    FontSize="12"
                                    Foreground="Gray"/>
                         
                         <Button 
-                                Content="+ New Account" 
+                                Content="+ New Categorie" 
                                 Margin="10" 
                                 Background="#007bff" 
                                 Foreground="White" 
@@ -81,7 +81,7 @@
                                 Padding="5"  
                                 Height="35"
                                 Cursor="Hand"
-                                Click="NavigateToAccount_Click">
+                                Click="NavigateToCategorie_Click">
                             <Button.Resources>
                                 <Style TargetType="Border">
                                     <Setter Property="CornerRadius" Value="5"/>

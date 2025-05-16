@@ -20,7 +20,7 @@ namespace TheClassMain.Pages
         {
             InitializeComponent();
             DataContext = this;
-            CalendrierCool26x.SelectedDatesChanged += DateChoisie;
+            CalendrierFacture.SelectedDatesChanged += DateChoisie;
             _ = ChargerFactures();
         }
 
@@ -39,7 +39,7 @@ namespace TheClassMain.Pages
 
         private void DateChoisie(object sender, SelectionChangedEventArgs e)
         {
-            if (CalendrierCool26x.SelectedDate is DateTime date)
+            if (CalendrierFacture.SelectedDate is DateTime date)
             {
                 var facturesFound = FacturesList
                     .Where(f => f.Date.Date == date.Date)
