@@ -13,9 +13,9 @@
             DataContext = new HomeViewModel();
         }
 
-        private void NavigateToAccount_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void NavigateToCategorie_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Compte());
+            NavigationService?.Navigate(new Categorie());
         }
 
         private void NavigateToFacture_Click(object sender, System.Windows.RoutedEventArgs e)

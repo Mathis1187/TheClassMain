@@ -14,6 +14,7 @@
         public decimal Montant { get; set; }
         public DateTime Date { get; set; }
 
+        // public bool IsPayer { get; set; }
         public int CustomerId { get; set; }
 
         [ForeignKey("CustomerId")]
