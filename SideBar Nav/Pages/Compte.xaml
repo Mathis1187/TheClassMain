@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TheClassMain.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="650" d:DesignWidth="500"
+      d:DesignHeight="650" d:DesignWidth="600"
       Title="Compte">
 
     <Grid>
@@ -25,35 +25,119 @@
                     <Border HorizontalAlignment="Left" CornerRadius="50" BorderThickness="2" Background="Blue" Padding="30" Margin="20 10">
                         <TextBlock Text="BB" FontSize="20" FontWeight="SemiBold"  Foreground="White"/>
                     </Border>
-                    <TextBlock VerticalAlignment="Center" Text="{Binding UserUsername}" FontSize="30"/>
+                    <StackPanel Orientation="Horizontal" Height="40">
+                        <TextBox 
+                            Background="Transparent"
+                            FontSize="15"
+                            FontWeight="Bold"
+                            Text="{Binding UserUsername}" 
+                            Padding="10" 
+                            HorizontalAlignment="Left" 
+                            BorderBrush="LightGray" 
+                            BorderThickness="1"/>
+                        <Button 
+                            Content="👤 Modifier"
+                            Margin="20 0"
+                            Background="Transparent"
+                            Foreground="Blue" 
+                            BorderBrush="Blue"
+                            BorderThickness="1"
+                            Padding="10,2"
+                            Cursor="Hand"
+                            Click="ChangeUsername_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>                    
+                    </StackPanel>                    
                 </StackPanel>
 
-
-                <!-- Username, Email, Password, ID champ -->
-
-                <!--<StackPanel Margin="20 0" Width="300" HorizontalAlignment="Left">
-                    <TextBlock Text="Username" Margin="0 10" FontWeight="SemiBold"/>
-                    <TextBox Background="#eee" IsReadOnly="True" Padding="2" Width="300" HorizontalAlignment="Left"/>
-                </StackPanel>-->
-
-                <StackPanel Margin="20 0" Width="300"  HorizontalAlignment="Left">
-                    <TextBlock Text="Email" Margin="0 10" FontWeight="SemiBold"/>
-                    <TextBox Background="#eee" Text="{Binding UserEmail}" IsReadOnly="True" Padding="2" Width="300" HorizontalAlignment="Left"/>
+                
+                
+                <!--Email Design -->
+                <StackPanel Margin="20 0" Width="400" HorizontalAlignment="Left">
+                    <TextBlock Text="📧 Email" Margin="0 10" FontWeight="SemiBold"/>
+    
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox 
+                            Background="#eee"
+                            Text="{Binding UserEmail}" 
+                            Padding="5" 
+                            Width="300" 
+                            HorizontalAlignment="Left" 
+                            BorderBrush="LightGray" 
+                            BorderThickness="1"/>
+        
+                        <Button 
+                            Content="📧 Modifier"
+                            Margin="10 0"
+                            Background="Transparent"
+                            Foreground="Blue" 
+                            BorderBrush="Blue"
+                            BorderThickness="1"
+                            Padding="10,2"
+                            Cursor="Hand"
+                            Click="ChangeEmail_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
 
+                
+                <!--Password Design -->
+                <StackPanel Margin="20 0" Width="400" HorizontalAlignment="Left">
+                    <TextBlock Text="🔒 Password" Margin="0 10" FontWeight="SemiBold"/>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBox 
+                            Background="#eee"
+                            Text="{Binding UserPassword}" 
+                            Padding="5" 
+                            Width="300" 
+                            HorizontalAlignment="Left" 
+                            BorderBrush="LightGray" 
+                            BorderThickness="1"/>
+        
+                        <Button 
+                            Content="🔒 Modifier"
+                            Margin="10 0"
+                            Background="Transparent"
+                            Foreground="Blue" 
+                            BorderBrush="Blue"
+                            BorderThickness="1"
+                            Padding="10,2"
+                            Cursor="Hand"
+                            Click="ChangePasswd_Click">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <!--ID Design -->
                 <StackPanel Margin="20 0" Width="300" HorizontalAlignment="Left">
-                    <TextBlock Text="Password" Margin="0 10" FontWeight="SemiBold"/>
-                    <TextBox  Background="#eee" IsReadOnly="True" Text="{Binding UserPassword}" Padding="2" Width="300" HorizontalAlignment="Left"/>
-                </StackPanel>
-
-                <StackPanel Margin="20 0" Width="300" HorizontalAlignment="Left">
-                    <TextBlock Text="Compte ID" Margin="0 10" FontWeight="SemiBold"/>
-                    <TextBox Background="#eee" Text="{Binding UserId}" IsReadOnly="True" Padding="2" Width="300" HorizontalAlignment="Left"/>
+                    <TextBlock Text="👤 Compte ID" Margin="0 10" FontWeight="SemiBold"/>
+                    <TextBox 
+                        Background="#eee"
+                        Text="{Binding UserId}" 
+                        IsReadOnly="True" 
+                        Padding="5" 
+                        Width="300" 
+                        HorizontalAlignment="Left" 
+                        BorderBrush="LightGray" 
+                        BorderThickness="1"/>
                 </StackPanel>
 
 
                 <!--Delete Account-->
-
                 <StackPanel Margin="20 20" Width="300" HorizontalAlignment="Left">
                     <TextBlock Text="Supprimer Compte" Margin="0 10" FontWeight="Bold"/>
                     <TextBlock TextWrapping="Wrap" Text="Cette action est irréversible. En supprimant votre compte, toutes vos données personnelles, historiques de factures et préférences seront définitivement effacées de notre système.Êtes-vous sûr(e) de vouloir continuer ?"
@@ -64,9 +148,9 @@
                         Margin="10" 
                         Background="Red" 
                         Foreground="White" 
-                        BorderThickness="0" 
                         Padding="5"  
                         Height="35"
+                        Cursor="Hand"
                         Click="Delete_Account">
                         <Button.Resources>
                             <Style TargetType="Border">
@@ -75,7 +159,6 @@
                         </Button.Resources>
                     </Button>
                 </StackPanel>
-
             </StackPanel>
         </Border>
         
