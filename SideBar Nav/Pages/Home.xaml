@@ -29,12 +29,12 @@
                 <Border Grid.Column="0" Margin="10 15" Background="#eee" Padding="5" BorderThickness="2" CornerRadius="5">
                     <StackPanel>
 
-                        <TextBlock Text="Make facture" FontWeight="Bold" Margin="10 8"/>
+                        <TextBlock Text="Make facture" FontWeight="Bold" Margin="10 8" FontSize="15"/>
 
                         <TextBlock Text="Créez et gérez vos factures rapidement pour suivre les paiements et les régler le sans prendre de retard ainsi éviter vous pourrai éviter des frais supplémentaire." 
                            TextWrapping="Wrap" 
                            Margin="10 12" 
-                           FontSize="12" 
+                           FontSize="15" 
                            Foreground="Gray"/>
                         
                         <Button 
@@ -64,12 +64,12 @@
                         <TextBlock 
                             Text="Make New Categorie" 
                             FontWeight="Bold" 
-                            Margin="10 8"/>
+                            Margin="10 8" FontSize="15"/>
 
                         <TextBlock Text="Créez et gérez vos categorie rapidement pour donner une categorie au factue." 
                                    TextWrapping="Wrap"
                                    Margin="10 0 10 10"
-                                   FontSize="12"
+                                   FontSize="15"
                                    Foreground="Gray"/>
                         
                         <Button 

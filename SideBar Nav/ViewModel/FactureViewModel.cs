@@ -7,18 +7,16 @@ using System.Windows;
 using System.Windows.Data;
 using Microsoft.EntityFrameworkCore;
 using TheClassMain.Model;
-using TheClassMain.Query;
 using TheClassMain.Service;
-
 using CommunityToolkit.Mvvm.Input;
-
+using TheClassMain.Query;
 
 namespace TheClassMain.ViewModel
 {
     public partial class FactureViewModel : ViewModelBase
     {
-        private ObservableCollection<Factures> facturesList = new ObservableCollection<Factures>();
-        private ObservableCollection<Categories> categoriesList = new ObservableCollection<Categories>();
+        private ObservableCollection<Factures> facturesList = new();
+        private ObservableCollection<Categories> categoriesList = new();
         private Factures selectedFacture;
         private Categories selectedCategorie;
         private string description;
@@ -27,12 +25,11 @@ namespace TheClassMain.ViewModel
         private int userFactureId;
         private string _facturesFilter = string.Empty;
         private Visibility _btnVisibility = Visibility.Hidden;
-        
+
         public ObservableCollection<Factures> FacturesList => facturesList;
         public ObservableCollection<Categories> CategoriesList => categoriesList;
-
         public ICollectionView FacturesCollectionView { get; }
-        
+
         public string FacturesFilter
         {
             get => _facturesFilter;
@@ -43,17 +40,22 @@ namespace TheClassMain.ViewModel
                 FacturesCollectionView.Refresh();
             }
         }
-        
+
         public Factures SelectedFacture
         {
             get => selectedFacture;
-            set { selectedFacture = value; OnPropertyChanged(); LoadSelectedFacture(); }
+            set
+            {
+                selectedFacture = value;
+                OnPropertyChanged();
+                LoadSelectedFacture();
+            }
         }
 
         public Categories SelectedCategorie
         {
             get => selectedCategorie;
-            set { selectedCategorie = value; OnPropertyChanged();}
+            set { selectedCategorie = value; OnPropertyChanged(); }
         }
 
         public Visibility BtnVisibility
@@ -77,8 +79,16 @@ namespace TheClassMain.ViewModel
         public DateTime? Date
         {
             get => date;
-            set { date = value; OnPropertyChanged(); }
+            set
+            {
+                if (SetProperty(ref date, value))
+                {
+                    OnPropertyChanged(nameof(IsPayer));
+                }
+            }
         }
+
+        public bool IsPayer => Date < DateTime.Today;
 
         public int UserFactureId
         {
@@ -133,24 +143,22 @@ namespace TheClassMain.ViewModel
         {
             if (SelectedFacture == null || !ValidateInputs(out decimal parsedMontant))
             {
-                MessageBox.Show($"Please select a facture first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please select a facture first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            else
+
+            using var context = new TableContext();
+            var factureToUpdate = await context.FacturesT.FindAsync(SelectedFacture.FactureId);
+            if (factureToUpdate != null)
             {
-                using var context = new TableContext();
-                var factureToUpdate = await context.FacturesT.FindAsync(SelectedFacture.FactureId);
-                if (factureToUpdate != null)
-                {
-                    factureToUpdate.Description = Description;
-                    factureToUpdate.Montant = parsedMontant;
-                    factureToUpdate.Date = Date.Value;
-                    factureToUpdate.CategorieId = SelectedCategorie.CategorieId;
-                    factureToUpdate.CategorieName = SelectedCategorie.Name;
-                    await context.SaveChangesAsync();
-                    await LoadFactures();
-                    ClearInputs();
-                }
+                factureToUpdate.Description = Description;
+                factureToUpdate.Montant = parsedMontant;
+                factureToUpdate.Date = Date.Value;
+                factureToUpdate.CategorieId = SelectedCategorie.CategorieId;
+                factureToUpdate.CategorieName = SelectedCategorie.Name;
+                await context.SaveChangesAsync();
+                await LoadFactures();
+                ClearInputs();
             }
         }
 
@@ -158,29 +166,27 @@ namespace TheClassMain.ViewModel
         {
             if (SelectedFacture == null)
             {
-                MessageBox.Show($"Please select a facture first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please select a facture first", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            else
+
+            string message = "Are you sure you want to delete this facture?";
+            string title = "Delete";
+            using var context = new TableContext();
+            var factureToDelete = await context.FacturesT.FindAsync(SelectedFacture.FactureId);
+            if (factureToDelete != null)
             {
-                string message = "Are you sure you want to delete this facture?";
-                string title = "Delete";
-                using var context = new TableContext();
-                var factureToDelete = await context.FacturesT.FindAsync(SelectedFacture.FactureId);
-                if (factureToDelete != null)
+                var res = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (res == MessageBoxResult.Yes)
                 {
-                    var res = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (res == MessageBoxResult.Yes)
-                    {
-                        context.FacturesT.Remove(factureToDelete);
-                        await context.SaveChangesAsync();
-                        await LoadFactures();
-                        ClearInputs();
-                    }
+                    context.FacturesT.Remove(factureToDelete);
+                    await context.SaveChangesAsync();
+                    await LoadFactures();
+                    ClearInputs();
                 }
             }
         }
-        
+
         public async Task LoadFactures()
         {
             using var context = new TableContext();
@@ -191,7 +197,6 @@ namespace TheClassMain.ViewModel
             facturesList.Clear();
             foreach (var facture in factures)
                 facturesList.Add(facture);
-
         }
 
         public async Task LoadCategories()
@@ -205,7 +210,7 @@ namespace TheClassMain.ViewModel
             foreach (var cat in cats)
                 categoriesList.Add(cat);
         }
-        
+
         public void LoadSelectedFacture()
         {
             if (SelectedFacture != null)
@@ -217,7 +222,7 @@ namespace TheClassMain.ViewModel
                 SelectedCategorie = CategoriesList.FirstOrDefault(c => c.CategorieId == SelectedFacture.CategorieId);
             }
         }
-        
+
         public bool ValidateInputs(out decimal parsedMontant)
         {
             parsedMontant = 0;
@@ -240,33 +245,6 @@ namespace TheClassMain.ViewModel
             SelectedCategorie = null;
             SelectedFacture = null;
             BtnVisibility = Visibility.Hidden;
-        }
-
-        [RelayCommand]
-        public async Task DeleteAllFactures()
-        {
-            string message = "Are you sure you want to delete ALL factures?";
-            string title = "Delete All";
-
-            var res = MessageBox.Show(message, title, MessageBoxButton.YesNo, MessageBoxImage.Warning);
-
-            if (res == MessageBoxResult.Yes)
-            {
-                using var context = new TableContext();
-
-                var allFactures = context.FacturesT.ToList();
-
-                if (allFactures.Any())
-                {
-                    context.FacturesT.RemoveRange(allFactures);
-                    await context.SaveChangesAsync();
-                    await LoadFactures();
-                }
-                else
-                {
-                    MessageBox.Show("There are no factures to delete.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-            }
         }
     }
 }

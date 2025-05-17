@@ -48,7 +48,7 @@
                         </TextBox.Resources>
                     </TextBox>
                 </StackPanel>
-                <ListView x:Name="CategoriesListView" ItemsSource="{Binding CategoriesCollectionView}" Height="150" SelectedItem="{Binding SelectedCategorie}">
+                <ListView FontSize="15" x:Name="CategoriesListView" ItemsSource="{Binding CategoriesCollectionView}" Height="150" SelectedItem="{Binding SelectedCategorie}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserCategorieId}" />

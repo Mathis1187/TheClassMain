@@ -46,7 +46,7 @@
                         </TextBox.Resources>
                     </TextBox>
                 </StackPanel>
-                <ListView ItemsSource="{Binding FacturesCollectionView}" SelectedItem="{Binding SelectedFacture}" Height="150">
+                <ListView FontSize="15" ItemsSource="{Binding FacturesCollectionView}" SelectedItem="{Binding SelectedFacture}" Height="150">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}" />
@@ -54,6 +54,7 @@
                             <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant, StringFormat={}{0:C}}" />
                             <GridViewColumn Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
                             <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                            <GridViewColumn Header="Payer" DisplayMemberBinding="{Binding IsPayer}" />
                         </GridView>
                     </ListView.View>
                 </ListView>

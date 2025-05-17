@@ -14,7 +14,8 @@
         public decimal Montant { get; set; }
         public DateTime Date { get; set; }
 
-        // public bool IsPayer { get; set; }
+        [NotMapped]
+        public bool IsPayer => Date.Date < DateTime.Today;
         public int CustomerId { get; set; }
 
         [ForeignKey("CustomerId")]

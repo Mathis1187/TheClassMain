@@ -16,14 +16,23 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <TextBlock Grid.Row="0" Text="Calendrier de factures" FontSize="50" FontWeight="Bold" Foreground="#FF7A5CFA" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="0"
+                   Text="Calendrier des factures" 
+                   FontSize="50" 
+                   FontWeight="Bold" 
+                   Foreground="#FF7A5CFA" 
+                   HorizontalAlignment="Center"
+                   />
         
-        <Calendar HorizontalAlignment="Center" Grid.Row="1" Name="CalendrierFacture" />
+        <Calendar HorizontalAlignment="Center" 
+                  Grid.Row="1" Name="CalendrierFacture" 
+                  SelectedDate="{Binding SelectedDate, Mode=TwoWay}" 
+                  Padding="5"/>
 
         <Border Background="White" VerticalAlignment="Center" Grid.Row="2">
             <StackPanel>
-                <TextBlock Text="Choisis une date ! " FontSize="24" FontWeight="Bold"/>
-                <ListView ItemsSource="{Binding FacturesDuJour}" Margin="20" Height="200">
+                <TextBlock Text="Choisis une date ! " FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                <ListView ItemsSource="{Binding FacturesDuJour}" Margin="20" Height="200" FontSize="15">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}" />
