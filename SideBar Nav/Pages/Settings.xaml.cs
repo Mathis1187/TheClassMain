@@ -6,7 +6,7 @@
     public partial class Settings : Page
     {
 
-        private readonly FactureViewModel viewModel = new();
+        private readonly SettingsViewModel viewModel = new();
         public Settings()
         {
             InitializeComponent();

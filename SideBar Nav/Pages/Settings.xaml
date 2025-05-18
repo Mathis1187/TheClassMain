@@ -52,7 +52,7 @@
             Foreground="White"
             HorizontalAlignment="Center"
             Margin="0,0,0,20"
-            Command="{Binding DeleteAllCategoriesCommand}"/>
+            Command="{Binding DeleteAllFacturesAndCategoriesCommand}"/>
 
         <CheckBox Grid.Row="3"
               Content="Activer les notifications"
