@@ -13,7 +13,7 @@
             <RowDefinition Height="29*"/>
             <RowDefinition Height="121*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Historique26x" FontFamily="ubuntu" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold" Margin="240,10,0,0"/>
+        <TextBlock Text="Historique26xxx" FontFamily="ubuntu" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold" Margin="240,10,0,0"/>
         <ListView ItemsSource="{Binding toutttlesfactures}" Margin="0,36,0,-123" Grid.Row="1">
             <ListView.View>
                 <GridView>
