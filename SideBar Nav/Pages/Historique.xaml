@@ -9,6 +9,26 @@
       Title="Historique">
 
     <Grid Background="#f1f3f5">
+<<<<<<< HEAD
         <TextBlock Text="Historique : À VENIR" FontFamily="ubuntu" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold"/>
+=======
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="121*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Historique26x" FontFamily="ubuntu" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFB197FC" FontSize="60" FontWeight="Bold" Margin="240,10,0,0"/>
+        <ListView ItemsSource="{Binding toutttlesfactures}" Margin="0,36,0,-123" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserFactureId}" />
+                    <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+                    <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant }" />
+                    <GridViewColumn Header="Categorie" DisplayMemberBinding="{Binding Categorie.Name}" />
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
     </Grid>
+
 </Page>
