@@ -1,0 +1,30 @@
+﻿<Page x:Class="TheClassMain.Pages.HistoriqueView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:TheClassMain.Pages"
+      xmlns:viewModel="clr-namespace:TheClassMain.ViewModel"
+      xmlns:global="clr-namespace:"
+      mc:Ignorable="d"
+      Title="HistoriqueView">
+
+    <Page.DataContext>
+        <global:HistoriqueViewModel />
+    </Page.DataContext>
+
+    <Grid Background="White">
+        <ListView ItemsSource="{Binding HistoryEntries}" 
+                  BorderThickness="1" 
+                  BorderBrush="LightGray"
+                  FontSize="15">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Timestamp}" Width="Auto"/>
+                    <GridViewColumn Header="Action" DisplayMemberBinding="{Binding Action}" Width="Auto"/>
+                    <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" Width="Auto"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

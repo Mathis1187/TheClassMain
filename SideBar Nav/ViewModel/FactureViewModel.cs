@@ -135,6 +135,7 @@ namespace TheClassMain.ViewModel
 
             context.FacturesT.Add(newFacture);
             await context.SaveChangesAsync();
+            await AddHistorique("Ajout", $"Ajout de la facture {newFacture.Description}", newFacture.FactureId);
             await LoadFactures();
             ClearInputs();
         }
@@ -149,18 +150,33 @@ namespace TheClassMain.ViewModel
 
             using var context = new TableContext();
             var factureToUpdate = await context.FacturesT.FindAsync(SelectedFacture.FactureId);
+
             if (factureToUpdate != null)
             {
+                bool wasUnpaid = factureToUpdate.Date >= DateTime.Today;
+                bool isNowPaid = Date.Value < DateTime.Today;
+
                 factureToUpdate.Description = Description;
                 factureToUpdate.Montant = parsedMontant;
                 factureToUpdate.Date = Date.Value;
                 factureToUpdate.CategorieId = SelectedCategorie.CategorieId;
                 factureToUpdate.CategorieName = SelectedCategorie.Name;
+
                 await context.SaveChangesAsync();
                 await LoadFactures();
                 ClearInputs();
+                
+                if (wasUnpaid && isNowPaid)
+                {
+                    await AddHistorique("Paiement", $"Facture '{factureToUpdate.Description}' marquée comme payée.", factureToUpdate.FactureId);
+                }
+                else
+                {
+                    await AddHistorique("Modification", $"Facture '{factureToUpdate.Description}' modifiée.", factureToUpdate.FactureId);
+                }
             }
         }
+
 
         public async Task DeleteFacture()
         {
@@ -181,6 +197,7 @@ namespace TheClassMain.ViewModel
                 {
                     context.FacturesT.Remove(factureToDelete);
                     await context.SaveChangesAsync();
+                    await AddHistorique("Suppression", $"Suppression de la facture {factureToDelete.Description}", factureToDelete.FactureId);
                     await LoadFactures();
                     ClearInputs();
                 }
@@ -245,6 +262,20 @@ namespace TheClassMain.ViewModel
             SelectedCategorie = null;
             SelectedFacture = null;
             BtnVisibility = Visibility.Hidden;
+        }
+
+        private async Task AddHistorique(string action, string description, int factureId)
+        {
+            using var context = new TableContext();
+            var historique = new Historique
+            {
+                Action = action,
+                Description = description,
+                FactureId = factureId,
+                Timestamp = DateTime.Now
+            };
+            context.HistoriquesT.Add(historique);
+            await context.SaveChangesAsync();
         }
     }
 }

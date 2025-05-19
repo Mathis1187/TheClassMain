@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using Mysqlx.Crud;
 using TheClassMain.Model;
 namespace TheClassMain.Query
 {
@@ -8,6 +9,7 @@ namespace TheClassMain.Query
         public DbSet<Categories> CategoriesT { get; set; }
         public DbSet<Factures> FacturesT { get; set; }
         public DbSet<Customer> CustomersT { get; set; }
+        public DbSet<Historique> HistoriquesT { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(

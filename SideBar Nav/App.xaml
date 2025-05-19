@@ -2,9 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:TheClassMain"
+             xmlns:converter="clr-namespace:TheClassMain.Converter"
              Startup="Application_Startup">
     <Application.Resources>
         <ResourceDictionary>
+            <converter:BoolToIconConverter x:Key="BoolToIconConverter" />
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/Generic.xaml"/>
                 <ResourceDictionary Source="/Themes/LoginStyle.xaml"/>
