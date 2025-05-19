@@ -47,7 +47,11 @@ namespace TheClassMain {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.5.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.2.0")]
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -73,7 +77,11 @@ namespace TheClassMain {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.5.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.2.0")]
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
         public static void Main() {
             TheClassMain.App app = new TheClassMain.App();
             app.InitializeComponent();

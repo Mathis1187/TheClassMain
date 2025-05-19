@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Mario\\Desktop\\TheClassMain\\",
   "Documents": [
     {
@@ -33,6 +34,65 @@
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\service\\emailoutlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\service\\emailoutlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\historique.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\historique.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\historique.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\historique.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\facture.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\calendrier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\calendrier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\calendrier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\categorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\categorie.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\viewmodel\\factureviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\notification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\notification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\compte.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\yanis\\desktop\\c#\\theclassmain\\sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\query\\tablecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
     }
   ],
   "DocumentGroupContainers": [
@@ -60,6 +120,17 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+<<<<<<< HEAD
+=======
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
             },
             {
               "$type": "Bookmark",
@@ -71,6 +142,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "Register.xaml",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Register.xaml",
@@ -79,10 +151,46 @@
               "RelativeToolTip": "SideBar Nav\\Pages\\Register.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-16T04:21:44.546Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "Facture.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Facture.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Facture.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Facture.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T14:11:02.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Historique.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Historique.xaml.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml.cs*",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Historique.xaml.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:10:06.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Historique.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Historique.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml*",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Historique.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T18:47:03.305Z",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "Settings.xaml",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Settings.xaml",
@@ -101,12 +209,45 @@
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Notification.xaml",
               "ToolTip": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Notification.xaml",
               "RelativeToolTip": "SideBar Nav\\Pages\\Notification.xaml",
+=======
+              "DocumentIndex": 8,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\ViewModel\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\ViewModel\\HomeViewModel.cs",
+              "RelativeToolTip": "SideBar Nav\\ViewModel\\HomeViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:15:07.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Home.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:14:30.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Home.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Home.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Home.xaml",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-16T04:21:35.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\ViewModel\\LoginViewModel.cs",
@@ -114,12 +255,33 @@
               "ToolTip": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\ViewModel\\LoginViewModel.cs",
               "RelativeToolTip": "SideBar Nav\\ViewModel\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 11,
+              "Title": "Compte.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Compte.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Compte.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Compte.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Compte.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T18:13:43.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Calendrier.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Calendrier.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDUAAAABAAAAAAAAAA==",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T04:20:39.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\ViewModel\\RegisterViewModel.cs",
@@ -129,10 +291,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T04:20:37.928Z",
+=======
+              "DocumentIndex": 4,
+              "Title": "Calendrier.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Calendrier.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Calendrier.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Calendrier.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-10T17:07:29.777Z",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 6,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\ViewModel\\ViewModelBase.cs",
@@ -140,12 +313,57 @@
               "ToolTip": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\ViewModel\\ViewModelBase.cs",
               "RelativeToolTip": "SideBar Nav\\ViewModel\\ViewModelBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 10,
+              "Title": "Notification.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Notification.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Notification.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Notification.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Notification.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-15T18:47:05.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FactureViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\ViewModel\\FactureViewModel.cs",
+              "RelativeToolTip": "SideBar Nav\\ViewModel\\FactureViewModel.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:47:24.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Categorie.xaml",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml",
+              "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Categorie.xaml",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Categorie.xaml",
+              "RelativeToolTip": "SideBar Nav\\Pages\\Categorie.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-14T21:11:03.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SideBar Nav\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T04:20:37.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 7,
               "Title": "EmailOutlook.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Service\\EmailOutlook.cs",
@@ -153,6 +371,15 @@
               "ToolTip": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Service\\EmailOutlook.cs",
               "RelativeToolTip": "SideBar Nav\\Service\\EmailOutlook.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 13,
+              "Title": "TableContext.cs",
+              "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeDocumentMoniker": "SideBar Nav\\Query\\TableContext.cs",
+              "ToolTip": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Query\\TableContext.cs",
+              "RelativeToolTip": "SideBar Nav\\Query\\TableContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwBAAAAA7AAAAAAAAAA==",
+>>>>>>> 59e78639fdb8a605f957cacc43f1d150435cd64e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T04:20:25.232Z",
               "EditorCaption": ""
