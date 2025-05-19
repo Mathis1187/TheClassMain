@@ -58,3 +58,4 @@ TestResults/
 *.targets
 *.rej
 *.merge
+*.Debug
