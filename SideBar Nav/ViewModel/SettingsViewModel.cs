@@ -80,6 +80,8 @@ public partial class SettingsViewModel : ViewModelBase
         
         var allFactures = context.FacturesT.ToList();
         
+        var allHistorique = context.HistoriquesT.ToList();
+        
         var categoriesToDelete = context.CategoriesT
             .Where(c => c.CustomerId == Session.CurrentCustomer.CustomerId)
             .ToList();
@@ -95,6 +97,9 @@ public partial class SettingsViewModel : ViewModelBase
         
         if (categoriesToDelete.Any())
             context.CategoriesT.RemoveRange(categoriesToDelete);
+        
+        if (allHistorique.Any())
+            context.HistoriquesT.RemoveRange(allHistorique);
 
         await context.SaveChangesAsync();
 
