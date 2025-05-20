@@ -4,16 +4,16 @@
   "WorkspaceRootPath": "C:\\Users\\Mario\\Desktop\\TheClassMain\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\pages\\notification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\notification.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\pages\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|solutionrelative:sidebar nav\\pages\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF7CEBCD-B228-4DC0-B420-B1ECC0BEB423}|SideBar Nav\\TheClassMain.csproj|c:\\users\\mario\\desktop\\theclassmain\\sidebar nav\\pages\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -102,11 +102,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Settings.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Settings.xaml.cs",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Settings.xaml.cs",
@@ -164,6 +164,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "Historique.xaml.cs",
               "DocumentMoniker": "C:\\Users\\yanis\\Desktop\\C#\\TheClassMain\\SideBar Nav\\Pages\\Historique.xaml.cs",
@@ -192,6 +193,9 @@
               "$type": "Document",
 <<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 0,
+>>>>>>> be1c154b302e37c02055142f7293ecd4a6f6de6e
               "Title": "Settings.xaml",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Settings.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Settings.xaml",
@@ -203,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Notification.xaml",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\TheClassMain\\SideBar Nav\\Pages\\Notification.xaml",
               "RelativeDocumentMoniker": "SideBar Nav\\Pages\\Notification.xaml",

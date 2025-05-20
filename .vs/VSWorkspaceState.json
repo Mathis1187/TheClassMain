@@ -5,6 +5,7 @@
     "\\SideBar Nav\\Model",
     "\\SideBar Nav\\Pages",
     "\\SideBar Nav\\Query",
+    "\\SideBar Nav\\Service",
     "\\SideBar Nav\\Themes",
     "\\SideBar Nav\\ViewModel"
   ],
