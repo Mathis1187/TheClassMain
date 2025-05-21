@@ -120,6 +120,11 @@ public partial class SettingsViewModel : ViewModelBase
 
     }
 
+    public void activateNotifications()
+    {
+        
+    }
+
 
     
     
