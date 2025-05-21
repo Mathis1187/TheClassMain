@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Settings"
@@ -63,12 +63,11 @@
         <Button Grid.Row="4"
             Content="Log out"
             FontSize="20"
-            Width="500"
+            Width="Auto"
             Padding="10"
             Background="#E53935"
             Foreground="White"
-            HorizontalAlignment="Center"
-            Margin="0,0,0,20"
+            VerticalAlignment="Bottom"
             Command="{Binding LogoutCommand}"/>
     </Grid>
 

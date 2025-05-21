@@ -25,10 +25,12 @@ public partial class SettingsViewModel : ViewModelBase
             using var context = new TableContext();
 
             var allFactures = context.FacturesT.ToList();
+            var allHistorique = context.HistoriquesT.ToList();
 
             if (allFactures.Any())
             {
                 context.FacturesT.RemoveRange(allFactures);
+                context.HistoriquesT.RemoveRange(allHistorique);
                 await context.SaveChangesAsync();
                 MessageBox.Show("All factures deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
@@ -49,10 +51,14 @@ public partial class SettingsViewModel : ViewModelBase
         if (result != MessageBoxResult.Yes) return;
   
         using var context = new TableContext();
+        
+        var allFactures = context.FacturesT.ToList();
+        var allHistorique = context.HistoriquesT.ToList();
 
         var categoriesToDelete = context.CategoriesT
             .Where(c => c.CustomerId == Session.CurrentCustomer.CustomerId)
             .ToList();
+        
 
         if (!categoriesToDelete.Any())
         {
@@ -60,7 +66,18 @@ public partial class SettingsViewModel : ViewModelBase
             return;
         }
 
-        context.CategoriesT.RemoveRange(categoriesToDelete);
+        if (allFactures.Any())
+        {
+            MessageBox.Show("You cant delete all categories if there still factures.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            return;
+        }
+        
+        if (categoriesToDelete.Any())
+            context.CategoriesT.RemoveRange(categoriesToDelete);
+        
+        if (allHistorique.Any())
+            context.HistoriquesT.RemoveRange(allHistorique);
+        
         await context.SaveChangesAsync();
         
         MessageBox.Show("All categories were deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -124,8 +141,5 @@ public partial class SettingsViewModel : ViewModelBase
     {
         
     }
-
-
-    
-    
 }
+

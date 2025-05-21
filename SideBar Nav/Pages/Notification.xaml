@@ -10,33 +10,51 @@
 
     <Grid Background="#f1f3f5">
         <StackPanel Margin="20">
-            
+
             <TextBlock Text="Factures à venir" FontFamily="Ubuntu" FontSize="30" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListView ItemsSource="{Binding UpcomingFactures}" Margin="0,0,0,30">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Margin="0,0,0,10">
-                            <TextBlock Text="{Binding Description}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Date, StringFormat='dd/MM/yyyy'}" />
-                            <TextBlock Text="{Binding Montant, StringFormat='{}{0:C}'}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                <ListView FontSize="15" ItemsSource="{Binding UpcomingFactures}" Height="150" Background="Green">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}"/>
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant, StringFormat={}{0:C}}" />
+                            <GridViewColumn Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                            <GridViewColumn Header="Payer">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding IsPayer, Converter={StaticResource BoolToIconConverter}}"
+                                                   FontSize="16"
+                                                   HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
 
 
             <TextBlock Text="Factures en retard" FontFamily="Ubuntu" FontSize="30" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListView ItemsSource="{Binding ExpiredFactures}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Margin="0,0,0,10">
-                            <TextBlock Text="{Binding Description}" FontWeight="Bold" />
-                            <TextBlock Text="{Binding Date, StringFormat='dd/MM/yyyy'}" />
-                            <TextBlock Text="{Binding Montant, StringFormat='{}{0:C}'}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                <ListView FontSize="15" ItemsSource="{Binding ExpiredFactures}" Height="150" Background="Red">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}"/>
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant, StringFormat={}{0:C}}" />
+                            <GridViewColumn Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                            <GridViewColumn Header="Payer">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding IsPayer, Converter={StaticResource BoolToIconConverter}}"
+                                                   FontSize="16"
+                                                   HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
 
         </StackPanel>
     </Grid>

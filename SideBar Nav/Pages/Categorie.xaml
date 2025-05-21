@@ -51,9 +51,9 @@
                 <ListView FontSize="15" x:Name="CategoriesListView" ItemsSource="{Binding CategoriesCollectionView}" Height="150" SelectedItem="{Binding SelectedCategorie}">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserCategorieId}" />
-                            <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" />
-                            <GridViewColumn Header="Active">
+                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserCategorieId}" Width="Auto"/>
+                            <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" Width="Auto"/>
+                            <GridViewColumn Header="Active" Width="Auto">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
                                         <CheckBox IsChecked="{Binding IsActive}" IsEnabled="False" HorizontalAlignment="Center"/>
