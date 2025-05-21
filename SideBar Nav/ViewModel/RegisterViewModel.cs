@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using TheClassMain.Model;
 using TheClassMain.Query;
 using TheClassMain.Command;
-using TheClassMain.Pages;
+using TheClassMain.Views;
 
 namespace TheClassMain.ViewModel
 {

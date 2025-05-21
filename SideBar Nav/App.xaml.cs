@@ -1,7 +1,7 @@
 ﻿namespace TheClassMain
 {
     using System.Windows;
-    using TheClassMain.Pages;
+    using TheClassMain.Views;
     using TheClassMain.Query;
 
     public partial class App : Application

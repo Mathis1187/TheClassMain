@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
-using TheClassMain.Pages;
+using TheClassMain.Views;
 using TheClassMain.Query;
 using TheClassMain.Service;
 

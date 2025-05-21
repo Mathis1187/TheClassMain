@@ -7,7 +7,7 @@ using System.Windows.Input;
 using Microsoft.EntityFrameworkCore;
 using TheClassMain.Command;
 using TheClassMain.Model;
-using TheClassMain.Pages;
+using TheClassMain.Views;
 using TheClassMain.Query;
 using TheClassMain.Service;
 
@@ -74,7 +74,7 @@ namespace TheClassMain.ViewModel
         {
             foreach (Window window in Application.Current.Windows)
             {
-                if (window is Pages.Login)
+                if (window is Views.Login)
                 {
                     window.Close();
                     break;

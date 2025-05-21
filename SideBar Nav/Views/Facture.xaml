@@ -1,20 +1,18 @@
-<Page x:Class="TheClassMain.Pages.Categorie"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:TheClassMain.ViewModel"
-      mc:Ignorable="d"
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Categorie" DataContext="CategorieViewModel">
-
+﻿<Page x:Class="TheClassMain.Views.Facture"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+     d:DesignHeight="500"
+     mc:Ignorable="d"
+     Title="Factures" Background="#e9ecef">
     <Grid>
-        <Border Background="White" CornerRadius="10" Margin="20,20,20,0" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
+        <Border Background="White" CornerRadius="10" Margin="20" Padding="20" BorderBrush="#dcdde1" BorderThickness="1">
             <StackPanel>
-                <TextBlock Text="Liste des categories" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Liste des factures" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                     <TextBox Width="300"
-                             Text="{Binding CategoriesFilter, UpdateSourceTrigger=PropertyChanged}"
+                             Text="{Binding FacturesFilter, UpdateSourceTrigger=PropertyChanged}"
                              VerticalAlignment="Center">
                         <TextBox.Resources>
                             <Style TargetType="TextBox">
@@ -24,7 +22,7 @@
                                             <Grid>
                                                 <ScrollViewer x:Name="PART_ContentHost"/>
                                                 <Border BorderBrush="Black" BorderThickness="1">
-                                                    <TextBlock Text="Filtrer les categories..."
+                                                    <TextBlock Text="Filtrer les factures..."
                                                                Foreground="Gray"
                                                                Margin="5,0,0,0"
                                                                VerticalAlignment="Center"
@@ -48,71 +46,82 @@
                         </TextBox.Resources>
                     </TextBox>
                 </StackPanel>
-                <ListView FontSize="15" x:Name="CategoriesListView" ItemsSource="{Binding CategoriesCollectionView}" Height="150" SelectedItem="{Binding SelectedCategorie}">
+                <ListView FontSize="15" ItemsSource="{Binding FacturesCollectionView}" SelectedItem="{Binding SelectedFacture}" Height="150">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Numero" DisplayMemberBinding="{Binding UserCategorieId}" Width="Auto"/>
-                            <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Name}" Width="Auto"/>
-                            <GridViewColumn Header="Active" Width="Auto">
+                            <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding UserFactureId}" />
+                            <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+                            <GridViewColumn Header="Montant" DisplayMemberBinding="{Binding Montant, StringFormat={}{0:C}}" />
+                            <GridViewColumn Header="Catégorie" DisplayMemberBinding="{Binding CategorieName}" />
+                            <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat='{}{0:dd/MM/yyyy}'}" />
+                            <GridViewColumn Header="Payer">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>
-                                        <CheckBox IsChecked="{Binding IsActive}" IsEnabled="False" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding IsPayer, Converter={StaticResource BoolToIconConverter}}"
+                                                   FontSize="16"
+                                                   HorizontalAlignment="Center"/>
                                     </DataTemplate>
                                 </GridViewColumn.CellTemplate>
                             </GridViewColumn>
                         </GridView>
                     </ListView.View>
                 </ListView>
-
                 <Separator Margin="0,15,0,15"/>
-
-                <TextBlock Text="Nouvelle categorie" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10"/>
-
+                <TextBlock Text="Nouvelle facture" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,10"/>
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0" VerticalAlignment="Center">
-                    <TextBlock Text="Nom:" Width="100" VerticalAlignment="Center"/>
-                    <TextBox x:Name="NameTextBox" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="300" Padding="5"/>
+                    <TextBlock Text="Description:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" Width="300" Padding="5"/>
                     <Button Content="Ajouter"
                             Click="AddButton_Click"
                             Width="100"
                             Margin="10,0,0,0"
                             Padding="5"
-                            Background="#007bff"
+                            Background="#007bff" 
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
                             Cursor="Hand"
                             VerticalAlignment="Center"/>
                 </StackPanel>
-
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                    <TextBlock Text="Active:" Width="100" VerticalAlignment="Center"/>
-                    <CheckBox IsChecked="{Binding IsActive, Mode=TwoWay}" Width="300" Padding="5"/>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Left">
-                    <Button Content="Mettre a jour"
+                    <TextBlock Text="Montant:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox Text="{Binding Montant, UpdateSourceTrigger=PropertyChanged}" Width="300" Padding="5"/>
+                    <Button Content="Mettre à jour"
+                            Width="100"
+                            Margin="10,0,0,0"
+                            Padding="5"
+                            Background="#28a745" 
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            VerticalAlignment="Center"
+                            Name="UpdateButton"
                             Click="UpdateButton_Click"
-                            Width="100"
-                            Margin="0,0,10,0"
-                            Padding="5"
-                            Background="#28a745"
-                            Foreground="White"
-                            BorderBrush="Transparent"
-                            FontWeight="Bold"
-                            Cursor="Hand"
                             Visibility="{Binding BtnVisibility}"/>
-
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Catégorie:" Width="100" VerticalAlignment="Center"/>
+                    <ComboBox ItemsSource="{Binding CategoriesList}"
+                              SelectedItem="{Binding SelectedCategorie}"
+                              DisplayMemberPath="Name"
+                              Width="300" Padding="5"/>
                     <Button Content="Supprimer"
-                            Click="DeleteButton_Click"
                             Width="100"
+                            Margin="10,0,0,0"
                             Padding="5"
-                            Background="#dc3545"
+                            Background="#dc3545" 
                             Foreground="White"
                             BorderBrush="Transparent"
                             FontWeight="Bold"
                             Cursor="Hand"
+                            VerticalAlignment="Center"
+                            Click="DeleteButton_Click"
                             Visibility="{Binding BtnVisibility}"/>
-                    
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="Date:" Width="100" VerticalAlignment="Center"/>
+                    <DatePicker SelectedDate="{Binding Date}" Width="300"/>
                     <Button Content="Annuler"
                             Width="100"
                             Margin="10,0,0,0"
@@ -126,7 +135,6 @@
                             Click="AnnulerButton_Click"
                             Visibility="{Binding BtnVisibility}"/>
                 </StackPanel>
-
             </StackPanel>
         </Border>
     </Grid>
