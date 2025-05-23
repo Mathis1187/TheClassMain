@@ -21,7 +21,6 @@ obj/
 # === Fichiers liés au design XAML générés ===
 *.g.cs
 *.g.i.cs
-*.xaml.cs
 
 # === Fichiers NuGet ===
 *.nupkg
